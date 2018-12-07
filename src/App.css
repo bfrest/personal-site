@@ -2,31 +2,87 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+:root {
+  --gray: #4b4b4b;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0 auto;
+  color: var(--gray);
+  height: 100vh;
+  width: 100vw;
+  font-family: "Source Code Pro", monospace;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  background: white;
+  font-size: 1.2em;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+li {
+  list-style: none;
+}
+
+.desc {
+  margin-top: -20px;
+}
+
+.fa {
+  width: 55px;
+  height: 60px;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+  text-shadow: 0px 0px 8px #1da1f2;
+}
+
+.fa-instagram:hover {
+  color: #ff7979;
+  text-shadow: 0px 0px 8px #ff7979;
+}
+
+.fa-github:hover {
+  color: #535c68;
+  text-shadow: 0px 0px 8px #535c68;
+}
+
+.fa-codepen:hover {
+  color: #7ed6df;
+  text-shadow: 0px 0px 8px #7ed6df;
+}
+
+.fa-linkedin:hover {
+  color: #5352ed;
+  text-shadow: 0px 0px 8px #5352ed;
+}
+
+.logos {
+  height: 80px;
+  width: 100px;
+  margin: 10px 5px 10px 5px;
+}
+
+.tech-logos {
+  width: 450px;
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 400px) {
+  .tech-logos {
+    width: 95vw;
   }
 }
