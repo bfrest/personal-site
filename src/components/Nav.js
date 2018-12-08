@@ -28,7 +28,7 @@ class Nav extends Component {
           <Link to="/home">
             <li>Home</li>
           </Link>
-          <Link to="/post/:id">
+          <Link to="/blog">
             <li>Blog</li>
           </Link>
           <li>Contact</li>
