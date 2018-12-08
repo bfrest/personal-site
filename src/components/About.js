@@ -1,26 +1,30 @@
-import React from "react";
+import React, { Component } from "react";
 import TechList from "./TechList";
 import SocialLinks from "./SocialLinks";
 import styled from "styled-components";
+import { WhiteBackground } from "../styleHelpers";
 
-const WhiteBackground = styled.div`
-  background: white;
-  align-self: center;
-  border: 8px solid rgba(230, 230, 230, 0.3);
-  width: 30%;
+const FullScreen = styled.div`
+  height: 100vh;
+  display: inherit;
+  justify-content: center;
 `;
 
-const About = () => {
-  return (
-    <WhiteBackground>
-      <div className="tech">
-        <h1>Brendon Freston</h1>
-        <p className="desc">Front End Focused Developer</p>
-        <TechList />
-      </div>
-      <SocialLinks />
-    </WhiteBackground>
-  );
-};
+class About extends Component {
+  render() {
+    return (
+      <FullScreen>
+        <WhiteBackground>
+          <div className="tech">
+            <h1>Brendon Freston</h1>
+            <p className="desc">Front End Focused Developer</p>
+            <TechList />
+          </div>
+          <SocialLinks />
+        </WhiteBackground>
+      </FullScreen>
+    );
+  }
+}
 
 export default About;

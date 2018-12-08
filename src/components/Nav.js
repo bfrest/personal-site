@@ -20,13 +20,14 @@ const NavBar = styled.div`
     cursor: pointer;
   }
 `;
-
 class Nav extends Component {
   render() {
     return (
       <div>
         <NavBar>
-          <li>Home</li>
+          <Link to="/home">
+            <li>Home</li>
+          </Link>
           <Link to="/post/:id">
             <li>Blog</li>
           </Link>

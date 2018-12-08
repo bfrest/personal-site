@@ -1,15 +1,13 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import App from "./App";
 import Post from "./components/Post";
+import About from "./components/About";
 
-const Router = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={App} />
-      <Route exact path="/post/:postId" component={Post} />
-    </Switch>
-  </BrowserRouter>
+export default (
+  <Switch>
+    <Route exact path="/" component={About} />
+    <Route path="/home" component={About} />
+    <Route path="/post" component={Post} />
+  </Switch>
 );
-
-export default Router;

@@ -8,17 +8,17 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: url("https://res.cloudinary.com/bfrest/image/upload/v1544274763/blog/what-the-hex.png");
-  font-size: 1.2em;
-  height: 100vh;
+  background: url("https://res.cloudinary.com/bfrest/image/upload/v1544274683/blog/topography.png");
+  background-size: fill;
   box-sizing: border-box;
   justify-content: center;
+  font-size: 0.7rem;
+  line-height: 2em;
 }
 
 a {
   color: var(--gray);
   text-decoration: none;
-  font-size: 2em;
 }
 
 li {
@@ -30,8 +30,7 @@ li {
 }
 
 .fa {
-  width: 55px;
-  height: 60px;
+  font-size: 1.9rem;
 }
 
 .fa-twitter:hover {
@@ -60,13 +59,8 @@ li {
 }
 
 .logos {
-  height: 80px;
-  width: 100px;
-  margin: 10px 5px 10px 5px;
-}
-
-.tech-logos {
-  width: 450px;
+  height: 60px;
+  padding: 3px;
 }
 
 .tech {
@@ -75,14 +69,27 @@ li {
   flex-direction: column;
 }
 
+.tech-logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
 .center {
   align-self: center;
   justify-self: center;
   border: 2px solid darksalmon;
 }
 
-@media (max-width: 430px) {
-  .tech-logos {
-    width: 95vw;
+.contactCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+}
+
+@media (min-width: 700px) {
+  .App {
+    font-size: 1.2rem;
   }
 }
