@@ -1,21 +1,57 @@
 import React from "react";
+import styled from "styled-components";
+
+const PostWrapper = styled.div`
+  width: 100%;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+
+  .code-sample {
+    width: 50%;
+    align-self: center;
+  }
+`;
+
+const PostContent = styled.div`
+  width: 70%;
+`;
 
 const Post = () => {
   return (
-    <div>
-      <h2>Blog</h2>
-      <div className="blog-post">
-        <h2>Blog Header</h2>
-        <p className="main-post">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-          ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-          incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
-          ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-          voluptas nulla pariatur?
+    <PostWrapper>
+      <PostContent>
+        {/*! This will all have to get made into a reusable component that can spit out the post dynamically !*/}
+        <h1>Blog Title</h1>
+
+        <i class="post-date">December 6, 2018</i>
+
+        <p class="post-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aut dolorem quam iusto doloremque ducimus id ea laboriosam minus eveniet commodi, quo ipsum eum corporis
+          alias, vel consequuntur dolores natus! Provident, enim quas minus nesciunt aliquid, laudantium voluptatem rem cumque a dolorum esse molestias praesentium labore, eius
+          dolore dolor impedit vel. Totam praesentium placeat quae ab obcaecati nemo magni id?
         </p>
-      </div>
-    </div>
+
+        <p>
+          Commodi dolor doloribus recusandae esse quaerat et inventore praesentium unde id quidem doloremque, libero, saepe consequuntur harum sequi fugiat mollitia dolore aut
+          tempore. Nulla ipsa dolore dolorum quo illum consectetur. Voluptate voluptatem quasi fuga. Tempore consequatur suscipit possimus eius rem delectus illum beatae dolores
+          quae saepe eveniet quibusdam, laboriosam facilis omnis cupiditate alias soluta at eaque unde a maxime sit? Voluptatibus magni labore vel dicta incidunt quasi blanditiis
+          est, ullam cupiditate suscipit animi, sed nesciunt, numquam atque molestiae? Aspernatur quam consectetur fugit reiciendis consequuntur ex molestias asperiores voluptates
+          velit veritatis.
+        </p>
+        <div>
+          <img class="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1544104724/random.png" alt="code sample" />
+        </div>
+
+        <p>
+          Nobis fuga veritatis dolorum cum tenetur vitae nisi impedit officia ratione architecto sunt consequatur nam exercitationem repellat dignissimos, maxime aliquam libero
+          fugit asperiores ullam. Quia iste dolorum dolor non mollitia. Reprehenderit, recusandae dolorum. Nihil inventore deleniti labore expedita similique! Nisi praesentium
+          tempore minus corporis rerum excepturi veritatis deleniti, laudantium, veniam incidunt iusto architecto? Neque iure tenetur obcaecati saepe exercitationem alias? Impedit,
+          reprehenderit consequuntur? Consequatur quaerat voluptatem facere non voluptate vel eius mollitia, sequi totam exercitationem autem eligendi ratione laborum deleniti
+          excepturi architecto numquam aperiam fuga distinctio. Dignissimos eligendi sequi placeat!
+        </p>
+      </PostContent>
+    </PostWrapper>
   );
 };
 

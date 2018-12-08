@@ -8,9 +8,11 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: white;
+  background: url("https://res.cloudinary.com/bfrest/image/upload/v1544274763/blog/what-the-hex.png");
   font-size: 1.2em;
   height: 100vh;
+  box-sizing: border-box;
+  justify-content: center;
 }
 
 a {
