@@ -32,7 +32,6 @@ class Nav extends Component {
             <li>Blog</li>
           </Link>
           <li>Contact</li>
-          <input type="text" placeholder="Search" />
         </NavBar>
       </div>
     );

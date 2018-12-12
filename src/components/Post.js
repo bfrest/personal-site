@@ -6,9 +6,7 @@ const PostWrapper = styled.div`
   width: 80%;
   font-size: 1.5em;
   justify-self: center;
-  align-self: center;
-  text-align: left;
-  margin: 20px 0 0 0;
+  margin: 20px 0px 0px 130px;
 
   .code-sample {
     width: 50%;
