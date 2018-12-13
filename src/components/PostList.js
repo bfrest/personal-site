@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { WhiteBackground } from "../styleHelpers";
 import styled from "styled-components";
+import { posts } from "../_FakePosts";
 
 const PostWrapper = styled.div`
   height: 80vh;
@@ -8,6 +9,7 @@ const PostWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 `;
 
 class PostList extends Component {
@@ -15,12 +17,9 @@ class PostList extends Component {
     return (
       <WhiteBackground>
         <PostWrapper>
-          <li>Blog Post 1</li>
-          <li>Blog Post 2</li>
-          <li>Blog Post 3</li>
-          <li>Blog Post 4</li>
-          <li>Blog Post 5</li>
-          <li>Blog Post 6</li>
+          {posts.map(post => (
+            <li key={post.id}>{post.title}</li>
+          ))}
         </PostWrapper>
       </WhiteBackground>
     );

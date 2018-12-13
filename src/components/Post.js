@@ -3,14 +3,24 @@ import styled from "styled-components";
 import { WhiteBackground } from "../styleHelpers";
 
 const PostWrapper = styled.div`
-  width: 80%;
-  font-size: 1.5em;
-  justify-self: center;
-  margin: 20px 0px 0px 130px;
-
+  width: 100%;
+  margin: 40px 0 0 0;
+  text-align: left;
   .code-sample {
     width: 50%;
   }
+`;
+
+const PostsButton = styled.button`
+  border-radius: 50%;
+  background: purple;
+  color: white;
+  border: 3px solid pink;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 5vh;
+  right: 2vw;
 `;
 
 class Post extends Component {
@@ -47,6 +57,7 @@ class Post extends Component {
             Impedit, reprehenderit consequuntur? Consequatur quaerat voluptatem facere non voluptate vel eius mollitia, sequi totam exercitationem autem eligendi ratione laborum
             deleniti excepturi architecto numquam aperiam fuga distinctio. Dignissimos eligendi sequi placeat!
           </p>
+          <PostsButton type="PostsButton">All Posts</PostsButton>
         </WhiteBackground>
       </PostWrapper>
     );
