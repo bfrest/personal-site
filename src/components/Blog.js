@@ -57,9 +57,12 @@ class Blog extends Component {
       <BlogWrap>
         <ResizeContext.Consumer>
           {context => {
+            // this will render the blog titles on the left of the currently selected post
             if (context.state.mainWidth > 1000 || this.state.showList === true) {
               return <PostList />;
             }
+
+            // this will render the button for mobile that brings up the list of posts
             if (context.state.mainWidth < 1000) {
               return (
                 <PostsButton type="button" onClick={() => this.toggleList()}>
@@ -70,6 +73,7 @@ class Blog extends Component {
           }}
         </ResizeContext.Consumer>
         <Post />
+        {console.log(this.state.showList)}
       </BlogWrap>
     );
   }

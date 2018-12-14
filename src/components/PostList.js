@@ -4,26 +4,25 @@ import { posts } from "../_FakePosts";
 
 const PostWrapper = styled.div`
   height: 100vh;
-  width: 15%;
+  width: 100vw;
   padding: 10px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: fixed;
   background: #111;
   color: #fccf31;
   top: 0;
   left: 0;
+  z-index: 1;
   li {
     text-decoration: underline;
   }
 
-  @media (max-width: 1000px) {
+  @media (min-width: 1000px) {
     height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 1;
+    width: 15%;
   }
 `;
 
