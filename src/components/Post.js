@@ -11,25 +11,9 @@ const PostWrapper = styled.div`
   }
 `;
 
-const PostsButton = styled.button`
-  border-radius: 50%;
-  background: purple;
-  color: white;
-  border: 3px solid pink;
-  width: 80px;
-  height: 80px;
-  position: fixed;
-  bottom: 5vh;
-  right: 2vw;
-`;
-
-const ListOfPosts = styled.div`
-  z-index: 2;
-  height: 100vh;
-  width: 100vh;
-`;
-
 class Post extends Component {
+  state = { showList: false };
+
   render() {
     return (
       <PostWrapper>
@@ -62,13 +46,6 @@ class Post extends Component {
             Impedit, reprehenderit consequuntur? Consequatur quaerat voluptatem facere non voluptate vel eius mollitia, sequi totam exercitationem autem eligendi ratione laborum
             deleniti excepturi architecto numquam aperiam fuga distinctio. Dignissimos eligendi sequi placeat!
           </p>
-          <PostsButton
-            type="PostsButton"
-            onClick={() => {
-              return <ListOfPosts>haha</ListOfPosts>;
-            }}>
-            All Posts
-          </PostsButton>
         </WhiteBackground>
       </PostWrapper>
     );
