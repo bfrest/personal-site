@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { WhiteBackground } from "../styleHelpers";
+import { WhiteBackground } from "../../styleHelpers";
 
 const PostWrapper = styled.div`
   width: 100%;
@@ -14,11 +14,14 @@ const PostWrapper = styled.div`
 class Post extends Component {
   state = { showList: false };
 
+  //!
+  //! This will need to be a dynamic component
+  //!
+
   render() {
     return (
       <PostWrapper>
         <WhiteBackground>
-          {/*! This will all have to get made into a reusable component that can spit out the post dynamically !*/}
           <h1>Blog Title</h1>
 
           <i className="post-date">December 6, 2018</i>

@@ -5,17 +5,13 @@ import { posts } from "../_FakePosts";
 const PostWrapper = styled.div`
   height: 100vh;
   width: 100vw;
-  padding: 10px;
-
-  display: flex;
+  display: ${props => props.listDisplay};
   flex-direction: column;
   justify-content: center;
   position: fixed;
   background: #111;
   color: #fccf31;
-  top: 0;
-  left: 0;
-  z-index: 1;
+
   li {
     text-decoration: underline;
   }
@@ -27,9 +23,15 @@ const PostWrapper = styled.div`
 `;
 
 class PostList extends Component {
+  constructor(props) {
+    super(props);
+    this.listRef = React.createRef();
+  }
+
   render() {
     return (
-      <PostWrapper>
+      // The list display attribute is getting the reference from props to display the list of posts
+      <PostWrapper listDisplay={`${this.props.showList}`}>
         {posts.map(post => (
           <li key={post.id}>{post.title}</li>
         ))}
