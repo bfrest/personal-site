@@ -10,7 +10,7 @@ class Contact extends Component {
   render() {
     return (
       <ContactForm>
-        <input placeholder="hello" />
+        <input placeholder="Name" />
         <input placeholder="hello" />
         <textarea />
       </ContactForm>

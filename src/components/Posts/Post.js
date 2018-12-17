@@ -7,13 +7,23 @@ const PostWrapper = styled.div`
   text-align: left;
   margin: 40px 0 0 0;
 
+  i {
+    color: lightgray;
+  }
+
+  h3 {
+    font-family: sans-serif;
+    background: #ff9f43;
+    padding: 5px;
+  }
+
   .code-sample {
     width: 50%;
     border-radius: 5%;
   }
 
   @media (min-width: 1200px) {
-    margin: 40px 0 0 210px;
+    margin: 40px 0 0 170px;
   }
 `;
 
@@ -22,16 +32,12 @@ class Post extends Component {
     return (
       <PostWrapper>
         <WhiteBackground>
-          <h1>Blog Title 2</h1>
+          <h1>Test Blog Title</h1>
 
           <i className="post-date">December 6, 2018</i>
 
-          <p className="post-content">
-            hahaah Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aut dolorem quam iusto doloremque ducimus id ea laboriosam minus eveniet commodi, quo ipsum eum
-            corporis alias, vel consequuntur dolores natus! Provident, enim quas minus nesciunt aliquid, laudantium voluptatem rem cumque a dolorum esse molestias praesentium
-            labore, eius dolore dolor impedit vel. Totam praesentium placeat quae ab obcaecati nemo magni id?
-          </p>
-
+          <h3 className="post-content">This is a work in progress, I will have my first post uploaded by the end of December! Im just fine tuning the site.</h3>
+          <h3>I was to excited to not upload this site because it desperately needed it! thanks for coming by and I hope you can come back to check out the blog when its done!</h3>
           <p>
             Commodi dolor doloribus recusandae esse quaerat et inventore praesentium unde id quidem doloremque, libero, saepe consequuntur harum sequi fugiat mollitia dolore aut
             tempore. Nulla ipsa dolore dolorum quo illum consectetur. Voluptate voluptatem quasi fuga. Tempore consequatur suscipit possimus eius rem delectus illum beatae dolores
