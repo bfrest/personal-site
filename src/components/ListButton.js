@@ -19,7 +19,7 @@ const PostsButton = styled.button`
   transition: all 0.4s;
   font-size: 0.9em;
   z-index: 2;
-  background: #5f27cd;
+  background: #ff793f;
   color: #fff;
   animation: ${Breathe} 1s;
   box-shadow: 0px 0px 5px gray;

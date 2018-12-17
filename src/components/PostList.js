@@ -14,7 +14,7 @@ const PostWrapper = styled.div`
   li {
     margin: 20px 5px;
     color: black;
-
+    font-size: 1.6em;
     &:hover {
       cursor: pointer;
       text-decoration: underline;
@@ -27,6 +27,7 @@ const PostWrapper = styled.div`
     display: flex;
     padding: 20px;
     border-right: 1px solid #dcdcdc;
+    font-size: 0.6em;
   }
 `;
 

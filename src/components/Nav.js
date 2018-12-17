@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const NavBar = styled.div`
-  background: linear-gradient(to right, #130f40 20%, #5f27cd 64%);
+  background: linear-gradient(to right, #ff5252 40%, #ff793f 90%);
   width: 100%;
   height: 50px;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
