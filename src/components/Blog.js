@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import PostList from "./PostList";
-import styled, { keyframes } from "styled-components";
-//import { ResizeContext } from "../context/ResizeProvider";
+import ListButton from "./ListButton";
+import styled from "styled-components";
+import { Route } from "react-router-dom";
 import Post from "./Posts/Post";
+import OtherStuff from "./Posts/OtherStuff";
 
 const BlogWrap = styled.div`
   height: 100vh;
@@ -15,34 +17,9 @@ const BlogWrap = styled.div`
   }
 `;
 
-const Breathe = keyframes`
-  0% {transform: scale(1)}
- 50% {transform: scale(1.2); box-shadow: 0px 0px 12px black; margin:40px 40px; border: 4px solid black;}
- 100% {transform: scale(1)}
-`;
-
-const PostsButton = styled.button`
-  border-radius: 50%;
-  border: none;
-  color: black;
-  width: 80px;
-  height: 80px;
-  position: fixed;
-  bottom: 3vh;
-  right: 4vw;
-  transition: all 0.4s;
-  font-size: 0.9em;
-  z-index: 2;
-  background: #fccf31;
-  color: #111;
-  animation: ${Breathe} 1s;
-  box-shadow: 0px 0px 5px gray;
-  border: 2px solid black;
-`;
-
 class Blog extends Component {
-  constructor(props) {
-    super(props);
+  constructor(props, match) {
+    super(props, match);
     this.state = {
       showList: "none"
     };
@@ -60,13 +37,13 @@ class Blog extends Component {
 
   render() {
     const { showList } = this.state;
+
     return (
       <BlogWrap>
-        <PostList showList={showList} />
-        <PostsButton type="button" onClick={() => this.toggleList()}>
-          {/* inline if else statement to show different text based on state */}
-          {showList === "none" ? "All Posts" : "Back"}
-        </PostsButton>
+        <Route path="/blog/first-post" component={Post} />
+        <Route path="/blog/other-stuff" component={OtherStuff} />
+        <PostList showList={showList} toggleList={this.toggleList} />
+        <ListButton showList={showList} toggleList={this.toggleList} />
       </BlogWrap>
     );
   }

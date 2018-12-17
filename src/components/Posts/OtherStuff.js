@@ -17,19 +17,19 @@ const PostWrapper = styled.div`
   }
 `;
 
-class Post extends Component {
+class OtherStuff extends Component {
   render() {
     return (
       <PostWrapper>
         <WhiteBackground>
-          <h1>Blog Title 2</h1>
+          <h1>Blog Title</h1>
 
           <i className="post-date">December 6, 2018</i>
 
           <p className="post-content">
-            hahaah Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aut dolorem quam iusto doloremque ducimus id ea laboriosam minus eveniet commodi, quo ipsum eum
-            corporis alias, vel consequuntur dolores natus! Provident, enim quas minus nesciunt aliquid, laudantium voluptatem rem cumque a dolorum esse molestias praesentium
-            labore, eius dolore dolor impedit vel. Totam praesentium placeat quae ab obcaecati nemo magni id?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aut dolorem quam iusto doloremque ducimus id ea laboriosam minus eveniet commodi, quo ipsum eum corporis
+            alias, vel consequuntur dolores natus! Provident, enim quas minus nesciunt aliquid, laudantium voluptatem rem cumque a dolorum esse molestias praesentium labore, eius
+            dolore dolor impedit vel. Totam praesentium placeat quae ab obcaecati nemo magni id?
           </p>
 
           <p>
@@ -55,4 +55,4 @@ class Post extends Component {
   }
 }
 
-export default Post;
+export default OtherStuff;
