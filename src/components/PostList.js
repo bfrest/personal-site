@@ -11,7 +11,6 @@ const PostWrapper = styled.div`
   justify-content: center;
   position: fixed;
   background: #f7f7f7;
-
   li {
     margin: 20px 5px;
     color: black;
@@ -27,6 +26,7 @@ const PostWrapper = styled.div`
     width: inherit;
     display: flex;
     padding: 20px;
+    border-right: 1px solid #dcdcdc;
   }
 `;
 
