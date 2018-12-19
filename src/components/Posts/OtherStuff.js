@@ -36,9 +36,7 @@ class OtherStuff extends Component {
 
           <i className="post-date">December 6, 2018</i>
 
-          <h3 className="post-content">This is a work in progress, I will have my first post uploaded by the end of December! Im just fine tuning the site.</h3>
-          <h3>I was to excited to not upload this site because it desperately needed it! thanks for coming by and I hope you can come back to check out the blog when its done!</h3>
-
+          <h3 className="post-content">This is a work in progress</h3>
           <p className="post-content">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aut dolorem quam iusto doloremque ducimus id ea laboriosam minus eveniet commodi, quo ipsum eum corporis
             alias, vel consequuntur dolores natus! Provident, enim quas minus nesciunt aliquid, laudantium voluptatem rem cumque a dolorum esse molestias praesentium labore, eius

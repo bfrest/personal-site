@@ -36,8 +36,7 @@ class Post extends Component {
 
           <i className="post-date">December 6, 2018</i>
 
-          <h3 className="post-content">This is a work in progress, I will have my first post uploaded by the end of December! Im just fine tuning the site.</h3>
-          <h3>I was to excited to not upload this site because it desperately needed it! thanks for coming by and I hope you can come back to check out the blog when its done!</h3>
+          <h3 className="post-content">This is a work in progress</h3>
           <p>
             Commodi dolor doloribus recusandae esse quaerat et inventore praesentium unde id quidem doloremque, libero, saepe consequuntur harum sequi fugiat mollitia dolore aut
             tempore. Nulla ipsa dolore dolorum quo illum consectetur. Voluptate voluptatem quasi fuga. Tempore consequatur suscipit possimus eius rem delectus illum beatae dolores
