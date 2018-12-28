@@ -8,6 +8,7 @@ const FullScreen = styled.div`
   height: 100vh;
   display: inherit;
   justify-content: center;
+  background: url("https://res.cloudinary.com/bfrest/image/upload/v1544274683/blog/topography.png");
 `;
 
 class About extends Component {
