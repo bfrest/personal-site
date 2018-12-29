@@ -5,22 +5,21 @@ const PostWrapper = styled.div`
   width: 100%;
   text-align: left;
   font-size: 1.3em;
-  padding: 40px 0 0 20px;
+  padding: 80px 0 0 20px;
 
   i {
     color: lightgray;
   }
 
-  h3 {
-    font-family: sans-serif;
-    background: #54a0ff;
-    padding: 5px;
-  }
-
   a {
-    background: linear-gradient(to right, #ff5252 40%, #ff793f 90%);
-    color: white;
-    padding: 6px;
+    border: 2px solid black;
+    transition: all 0.16s ease-in-out;
+    padding: 1px;
+
+    &:hover {
+      color: white;
+      background: black;
+    }
   }
 
   li {
@@ -46,7 +45,7 @@ class OtherStuff extends Component {
       <PostWrapper>
         <h1>Open Source Project</h1>
 
-        <i className="post-date">December 6, 2018</i>
+        <i className="post-date">December 28, 2018</i>
 
         <p>
           I have the opportunity to help a local trade school build an open source project that we will be documenting heavily to also be used as a training course and create video

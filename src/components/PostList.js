@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { posts } from "../_FakePosts";
+import { posts } from "../postTitle";
 import { Link } from "react-router-dom";
 
 const PostWrapper = styled.div`
@@ -11,10 +11,12 @@ const PostWrapper = styled.div`
   justify-content: center;
   position: fixed;
   background: #f7f7f7;
+
   li {
     margin: 20px 5px;
     color: black;
     font-size: 1.6em;
+
     &:hover {
       cursor: pointer;
       text-decoration: underline;

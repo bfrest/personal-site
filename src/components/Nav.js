@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import wiz from "../wiz.svg";
 
 const NavBar = styled.div`
-  background: linear-gradient(to right, #ff5252 40%, #ff793f 90%);
+  background: white;
   width: 100%;
-  height: 50px;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+  height: 60px;
+  box-shadow: 0px 1px 6px #e5e5e5;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,20 +16,17 @@ const NavBar = styled.div`
   z-index: 1;
 
   li {
-    color: white;
-    font-size: 1.4em;
+    font-weight: 400;
+    color: e5e5e5;
+    font-size: 1.8em;
     margin: 0 60px;
+    transition: all 0.2s ease-in-out;
+
     &:hover {
       cursor: pointer;
-      transform: scale(1.1);
+      color: black;
+      transform: scale(1.04);
     }
-  }
-
-  img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: -70px 0 0 10px;
   }
 `;
 class Nav extends Component {
@@ -44,7 +40,6 @@ class Nav extends Component {
           <Link to="/blog/open-source">
             <li>Blog</li>
           </Link>
-          {/* <img src={wiz} /> */}
         </NavBar>
       </div>
     );

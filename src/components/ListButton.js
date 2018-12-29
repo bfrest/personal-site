@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 
 const Breathe = keyframes`
   0% {transform: scale(1)}
- 50% {transform: scale(1.2); box-shadow: 0px 0px 12px black; margin:40px 40px; border: 4px solid black;}
+ 50% {transform: scale(1.2); margin:40px 40px;}
  100% {transform: scale(1)}
 `;
 
@@ -18,9 +18,10 @@ const PostsButton = styled.button`
   right: 4vw;
   transition: all 0.4s;
   font-size: 0.9em;
+  font-weight: 600;
   z-index: 2;
-  background: #ff793f;
-  color: #fff;
+  background: black;
+  color: white;
   animation: ${Breathe} 1s;
   box-shadow: 0px 0px 5px gray;
 
