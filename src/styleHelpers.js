@@ -1,8 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const Breathe = keyframes`
+  0%  {box-shadow: 0 0 10px #00FF00;}
+  50%  {box-shadow: 0 0 10px #CCFF00;}
+ 100% {box-shadow: 0 0 10px #00FF00;}
+`;
 
 export const WhiteBackground = styled.div`
   background: white;
   padding: 35px;
   align-self: center;
-  box-shadow: 0px 1px 16px lightgray;
+  border-radius: 15px;
+  animation: ${Breathe} infinite;
+  animation-duration: 8s;
 `;
