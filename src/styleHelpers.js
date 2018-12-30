@@ -1,9 +1,9 @@
 import styled, { keyframes } from "styled-components";
 
 const Breathe = keyframes`
-  0%  {box-shadow: 0 0 10px #00FF00;}
-  50%  {box-shadow: 0 0 10px #CCFF00;}
- 100% {box-shadow: 0 0 10px #00FF00;}
+  0%  {box-shadow: 0 0 30px #00FF00;}
+  50%  {box-shadow: 0 0 30px #CCFF00;}
+ 100% {box-shadow: 0 0 30px #00FF00;}
 `;
 
 export const WhiteBackground = styled.div`

@@ -20,7 +20,7 @@ const PostsButton = styled.button`
   font-size: 0.9em;
   font-weight: 600;
   z-index: 2;
-  background: black;
+  background: ${props => props.theme.bg};
   color: white;
   animation: ${Breathe} 1s;
   box-shadow: 0px 0px 5px gray;
