@@ -21,7 +21,7 @@ const PostsButton = styled.button`
   font-weight: 600;
   z-index: 2;
   background: ${props => props.theme.bg};
-  color: white;
+  color: ${props => props.theme.fc};
   animation: ${Breathe} 1s;
   box-shadow: 0px 0px 5px gray;
 
