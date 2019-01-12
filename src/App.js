@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Nav from "./components/Nav";
+import ThemePicker from "./components/ThemePicker";
 import router from "./router";
 import "./App.css";
 import ResizeObserver from "react-resize-observer";
@@ -10,38 +11,13 @@ const lightTheme = {
   fc: "black"
 };
 
-const darkTheme = {
-  bg: lightTheme.fc,
-  fc: lightTheme.bg
-};
-
-const purpleTheme = {
-  bg: "purple",
-  fc: lightTheme.fc
-};
-
-const greenGradient = {
-  bg: "linear-gradient(to left, #0fd850 50%, #f9f047 100%)",
-  fc: lightTheme.bg
-};
-
-const purpYella = {
-  bg: "linear-gradient(-225deg, #231557 10%, #44107A 29%, #FF1361 67%, #FFF800 100%)",
-  fc: lightTheme.bg
-};
-
-const othergrad = {
-  bg: "linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);",
-  fc: lightTheme.bg
-};
-
-const ThemePicker = styled.select`
+const ShowButton = styled.button`
+  border: none;
   position: absolute;
   top: 0;
   left: 0;
-  width: 110px;
   z-index: 3;
-  margin: 63px 0 0 10px;
+  margin: 20px 0 0 10px;
 `;
 
 class App extends Component {
@@ -50,13 +26,28 @@ class App extends Component {
     this.state = {
       mainWidth: null,
       mainHeight: null,
-      theme: lightTheme
+      theme: lightTheme,
+      showPicker: false
     };
+
     this.handleTheme = this.handleTheme.bind(this);
+    this.handlePicker = this.handlePicker.bind(this);
+  }
+
+  componentDidMount() {
+    this.handleTheme(lightTheme);
   }
 
   handleTheme(colorTheme) {
     this.setState({ theme: colorTheme });
+  }
+
+  handlePicker() {
+    if (this.state.showPicker === false) {
+      this.setState({ showPicker: true });
+    } else {
+      this.setState({ showPicker: false });
+    }
   }
 
   render() {
@@ -70,14 +61,12 @@ class App extends Component {
           />
           <Nav />
           {router}
-          {/* <ThemePicker>
-            <option onClick={() => this.handleTheme(lightTheme)}>Light</option>
-            <option onClick={() => this.handleTheme(darkTheme)}>Dark</option>
-            <option onClick={() => this.handleTheme(purpYella)}>purpYella</option>
-            <option onClick={() => this.handleTheme(purpleTheme)}>purpleTheme</option>
-            <option onClick={() => this.handleTheme(othergrad)}>othergrad</option>
-            <option onClick={() => this.handleTheme(greenGradient)}>Green Gradient</option>
-          </ThemePicker> */}
+
+          {this.state.showPicker === true ? (
+            <ThemePicker handleTheme={this.handleTheme} handlePicker={this.handlePicker} />
+          ) : (
+            <ShowButton onClick={() => this.handlePicker()}>change Theme</ShowButton>
+          )}
         </div>
       </ThemeProvider>
     );
