@@ -3,17 +3,13 @@ import styled from "styled-components";
 
 const ThemeList = styled.ul`
   cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-  margin: 63px 0 0 10px;
-  background: ${props => props.theme.bg};
-  color: ${props => props.theme.fc};
   display: flex;
+  font-size: 1.3em;
   flex-direction: column;
-  text-align: center;
-  padding: 20px;
+  align-content: center;
+  justify-content: center;
+  border-top: 1px solid lightgray;
+  margin-top: -23px;
 `;
 
 const lightTheme = {
@@ -28,7 +24,7 @@ const darkTheme = {
 
 const purpleTheme = {
   bg: "purple",
-  fc: lightTheme.fc
+  fc: lightTheme.bg
 };
 
 const greenGradient = {
@@ -47,22 +43,20 @@ const othergrad = {
 };
 
 class ThemePicker extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
   render() {
-    const { handleTheme, handlePicker } = this.props;
+    const { handleTheme } = this.props;
     return (
-      <ThemeList>
-        <p onClick={() => handlePicker()}>x</p>
-        <li onClick={() => handleTheme(lightTheme)}>Light</li>
-        <li onClick={() => handleTheme(darkTheme)}>Dark</li>
-        <li onClick={() => handleTheme(purpYella)}>purpYella</li>
-        <li onClick={() => handleTheme(purpleTheme)}>purpleTheme</li>
-        <li onClick={() => handleTheme(othergrad)}>othergrad</li>
-        <li onClick={() => handleTheme(greenGradient)}>Green Gradient</li>
-      </ThemeList>
+      <div>
+        <h2>Change Theme</h2>
+        <ThemeList>
+          <li onClick={() => handleTheme(lightTheme)}>Salt n' Pepper</li>
+          <li onClick={() => handleTheme(darkTheme)}>Pepper n' Salt</li>
+          <li onClick={() => handleTheme(purpYella)}>Purp, Pink & Yella</li>
+          <li onClick={() => handleTheme(purpleTheme)}>Pure Purple</li>
+          <li onClick={() => handleTheme(othergrad)}>Easter?</li>
+          <li onClick={() => handleTheme(greenGradient)}>Green Gradient</li>
+        </ThemeList>
+      </div>
     );
   }
 }
