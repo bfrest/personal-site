@@ -62,6 +62,7 @@ class Nav extends Component {
   }
 
   render() {
+    console.log(window.innerHeight);
     return (
       <div>
         <NavBar>
@@ -72,7 +73,7 @@ class Nav extends Component {
             <li>Blog</li>
           </Link>
           <img onClick={() => this.handleSettings()} onMouseOver={() => this.togglePlaygroundTip()} onMouseLeave={() => this.togglePlaygroundTip()} src={think} alt="settings" />
-          {this.state.showPlaygroundTip === true && <PlaygroundTip />}
+          {this.state.showPlaygroundTip === true && window.innerWidth > 700 && <PlaygroundTip />}
         </NavBar>
         {this.state.showSettings === true && <Extras handleTheme={this.props.handleTheme} handleSetting={this.handleSettings} />}
       </div>
