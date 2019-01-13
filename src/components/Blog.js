@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { Route } from "react-router-dom";
 import Post from "./Posts/Template_Post";
 import OpenSource from "./Posts/OpenSource";
+import ConditionalRendering from "./Posts/ConditionalRendering";
 
 const BlogWrap = styled.div`
   height: 100vh;
@@ -43,9 +44,11 @@ class Blog extends Component {
         {/* 
           This seems like a terrible way to route, 
           it was just the quickest way I thought of at the time
+          I will be refactoring soon
         */}
         <Route path="/blog/first-post" component={Post} />
         <Route path="/blog/open-source" component={OpenSource} />
+        <Route path="/blog/conditional-rendering" component={ConditionalRendering} />
         <PostList showList={showList} toggleList={this.toggleList} />
         <ListButton showList={showList} toggleList={this.toggleList} />
       </BlogWrap>

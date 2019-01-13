@@ -10,7 +10,7 @@ const NavBar = styled.div`
   color: ${props => props.theme.fc};
   width: 100vw;
   height: 60px;
-  box-shadow: 0px 1px 6px #e5e5e5;
+  box-shadow: 0px 1px 3px gray;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -72,6 +72,7 @@ class Nav extends Component {
           <Link to="/blog/open-source">
             <li>Blog</li>
           </Link>
+          {/* This is for the little tooltip that shows up when you hover the lightbulb in the nav */}
           <img onClick={() => this.handleSettings()} onMouseOver={() => this.togglePlaygroundTip()} onMouseLeave={() => this.togglePlaygroundTip()} src={think} alt="settings" />
           {this.state.showPlaygroundTip === true && window.innerWidth > 700 && <PlaygroundTip />}
         </NavBar>

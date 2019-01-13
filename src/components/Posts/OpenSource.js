@@ -1,50 +1,11 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-
-const PostWrapper = styled.div`
-  width: 100%;
-  text-align: left;
-  font-size: 1.3em;
-  padding: 80px 0 0 20px;
-
-  i {
-    color: lightgray;
-  }
-
-  a {
-    border: 2px solid black;
-    transition: all 0.16s ease-in-out;
-    padding: 1px;
-
-    &:hover {
-      color: white;
-      background: black;
-    }
-  }
-
-  li {
-    margin-left: -24px;
-    font-size: 0.9em;
-  }
-
-  .code-sample {
-    width: 50%;
-    border-radius: 5%;
-  }
-
-  @media (min-width: 1200px) {
-    margin: 40px 0 0 170px;
-    font-size: 1.1em;
-    width: 70%;
-  }
-`;
+import { PostWrapper } from "./postStyles";
 
 class OtherStuff extends Component {
   render() {
     return (
       <PostWrapper>
         <h1>Open Source Project</h1>
-
         <i className="post-date">December 28, 2018</i>
 
         <p>
@@ -71,7 +32,10 @@ class OtherStuff extends Component {
         </ul>
         <p>
           I will update this post with more info and a link to the project as we go. So far have a little demo on resizing things that you can check out{" "}
-          <a href="https://codesandbox.io/s/y2n8xjqwjz">here</a>.
+          <a href="https://codesandbox.io/s/y2n8xjqwjz">
+            <i>here</i>
+          </a>
+          .
         </p>
       </PostWrapper>
     );
