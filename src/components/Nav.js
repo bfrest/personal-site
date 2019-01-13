@@ -69,7 +69,7 @@ class Nav extends Component {
           <Link to="/home">
             <li>Home</li>
           </Link>
-          <Link to="/blog/open-source">
+          <Link to="/blog/conditional-rendering">
             <li>Blog</li>
           </Link>
           {/* This is for the little tooltip that shows up when you hover the lightbulb in the nav */}

@@ -32,10 +32,7 @@ class OtherStuff extends Component {
         </ul>
         <p>
           I will update this post with more info and a link to the project as we go. So far have a little demo on resizing things that you can check out{" "}
-          <a href="https://codesandbox.io/s/y2n8xjqwjz">
-            <i>here</i>
-          </a>
-          .
+          <a href="https://codesandbox.io/s/y2n8xjqwjz">here</a>.
         </p>
       </PostWrapper>
     );

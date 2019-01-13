@@ -5,16 +5,23 @@ export const PostWrapper = styled.div`
   width: 100%;
   text-align: left;
   font-size: 1.3em;
-  padding: 80px 0 0 20px;
   line-height: 1.9em;
-  font-size: 1.2em;
+  padding: 80px 20px 80px 10px;
 
   i {
     color: black;
     z-index: 5;
-    background-image: linear-gradient(to right, #abcfa5 10%, #939fd0 80%);
+    background: ${props => (props.theme.bg === "white" ? props.theme.fc : props.theme.bg)};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     border-radius: 5px;
     padding: 6px;
+    font-weight: 800;
+    font-size: 1.4em;
+  }
+
+  h3 {
+    text-decoration: underline;
   }
 
   li {
@@ -24,6 +31,8 @@ export const PostWrapper = styled.div`
 
   .code-sample {
     width: 90%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 1px rgba(39, 46, 53, 0.9);
   }
 
   @media (min-width: 1200px) {
