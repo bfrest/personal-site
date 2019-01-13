@@ -35,6 +35,11 @@ export const PostWrapper = styled.div`
     box-shadow: 1px 1px 8px 1px rgba(39, 46, 53, 0.9);
   }
 
+  .small-logo {
+    width: 20px;
+    padding: 0 5px 0 10px;
+  }
+
   @media (min-width: 1200px) {
     margin: 40px 0 0 270px;
     font-size: 1.2em;
