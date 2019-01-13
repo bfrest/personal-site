@@ -25,9 +25,9 @@ const PostWrapper = styled.div`
 
   @media (min-width: 1200px) {
     height: 100vh;
-    width: inherit;
+    width: 17%;
     display: flex;
-    padding: 20px;
+    padding: 5px;
     border-right: 1px solid #dcdcdc;
     font-size: 0.6em;
   }
@@ -41,9 +41,10 @@ class PostList extends Component {
 
   render() {
     return (
-      // The listdDisplay attribute is getting the reference from props to display the list of posts
+      // The listDisplay attribute is getting the reference from props to display the list of posts
       <PostWrapper listDisplay={`${this.props.showList}`}>
         {posts.map(post => (
+          // This is just creating a dynamic link to blog post based on the alt
           <Link to={`/blog/${post.alt}`} onClick={() => this.props.toggleList()}>
             <li key={post.id}>{post.title}</li>
           </Link>

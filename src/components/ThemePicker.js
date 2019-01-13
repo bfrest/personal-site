@@ -10,6 +10,12 @@ const ThemeList = styled.ul`
   justify-content: center;
   border-top: 1px solid lightgray;
   margin-top: -23px;
+  margin-right: 9%;
+  overflow: scroll;
+
+  @media (min-width: 900px) {
+    margin-right: 2%;
+  }
 `;
 
 const lightTheme = {
@@ -24,7 +30,7 @@ const darkTheme = {
 
 const purpleTheme = {
   bg: "purple",
-  fc: lightTheme.bg
+  fc: "#ff0aff"
 };
 
 const greenGradient = {
@@ -42,6 +48,16 @@ const othergrad = {
   fc: lightTheme.bg
 };
 
+const pinky = {
+  bg: "#fadadd",
+  fc: "#ff6666"
+};
+
+const huntin101 = {
+  bg: "#FF6700",
+  fc: "#00563B"
+};
+
 class ThemePicker extends Component {
   render() {
     const { handleTheme } = this.props;
@@ -55,6 +71,8 @@ class ThemePicker extends Component {
           <li onClick={() => handleTheme(purpleTheme)}>Pure Purple</li>
           <li onClick={() => handleTheme(othergrad)}>Easter?</li>
           <li onClick={() => handleTheme(greenGradient)}>Green Gradient</li>
+          <li onClick={() => handleTheme(pinky)}>Pink</li>
+          <li onClick={() => handleTheme(huntin101)}>huntin 101</li>
         </ThemeList>
       </div>
     );

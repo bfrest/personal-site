@@ -1,30 +1,5 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-
-const PostWrapper = styled.div`
-  width: 100%;
-  text-align: left;
-  margin: 40px 0 0 0;
-
-  i {
-    color: lightgray;
-  }
-
-  h3 {
-    font-family: sans-serif;
-    background: #ff9f43;
-    padding: 5px;
-  }
-
-  .code-sample {
-    width: 50%;
-    border-radius: 5%;
-  }
-
-  @media (min-width: 1200px) {
-    margin: 40px 0 0 170px;
-  }
-`;
+import { PostWrapper } from "./postStyles";
 
 class Post extends Component {
   render() {
