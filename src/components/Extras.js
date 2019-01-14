@@ -3,8 +3,14 @@ import styled, { keyframes } from "styled-components";
 import ThemePicker from "./ThemePicker";
 
 const comeIn = keyframes`
-0%{transform: scale(.3); right: -100vw;}
-100%{transform: scale(1); right: 0;}
+0%{transform: scale(.4); opacity: 0;}
+60%{ transform: scale(1.06);}
+100%{transform: scale(1); opacity: 1}
+`;
+
+const goOut = keyframes`
+0%{transform: scale(1); right: 0;}
+100%{transform: scale(.3); right: -100vw;}
 `;
 
 const ExtraStuff = styled.div`
@@ -26,10 +32,10 @@ const ExtraStuff = styled.div`
   box-shadow: 0px 0px 5px gray;
   transition: all ease-in-out;
   animation: ${comeIn};
-  animation-duration: 0.2s;
+  animation-duration: 0.5s;
   line-height: 3em;
 
-  h2 {
+  h1 {
     margin: -10px 0 30px 0;
   }
 
@@ -57,7 +63,8 @@ class Extras extends Component {
   render() {
     return (
       <ExtraStuff>
-        <h2>Settings</h2>
+        <h1>Settings</h1>
+
         {/* This is the x to close the modal */}
         <svg onClick={() => this.props.handleSetting()} width="36" height="36" viewBox="0 0 263 264" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="0.331665" y="43.9653" width="61" height="310" rx="16" transform="rotate(-45 0.331665 43.9653)" />
