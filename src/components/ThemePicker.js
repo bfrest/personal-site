@@ -10,11 +10,15 @@ const ThemeList = styled.ul`
   justify-content: center;
   border-top: 1px solid lightgray;
   margin-top: -23px;
-  margin-right: 9%;
+  margin-right: 20%;
   overflow: scroll;
 
+  li:hover {
+    text-decoration: underline;
+  }
+
   @media (min-width: 900px) {
-    margin-right: 2%;
+    margin-right: 13%;
   }
 `;
 
