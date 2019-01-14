@@ -10,7 +10,7 @@ const NavBar = styled.div`
   color: ${props => props.theme.fc};
   width: 100vw;
   height: 60px;
-  box-shadow: 0px 1px 3px gray;
+  box-shadow: 0px 1px 0px gray;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -62,7 +62,6 @@ class Nav extends Component {
   }
 
   render() {
-    console.log(window.innerHeight);
     return (
       <div>
         <NavBar>
