@@ -4,27 +4,22 @@ import styled from "styled-components";
 const ThemeList = styled.ul`
   cursor: pointer;
   height: 150px;
-  width: 80%;
-  height: 100%;
   display: flex;
-  font-size: 1.3em;
   flex-direction: column;
-  align-content: center;
+  font-size: 1.3em;
   border-top: 1px solid lightgray;
-  margin-top: -23px;
-  margin-right: 20%;
-  overflow-y: scroll;
   line-height: 2.2em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 
   li {
-    margin-right: 30px;
     :hover {
       text-decoration: underline;
     }
   }
 
   @media (min-width: 900px) {
-    margin-right: 13%;
   }
 `;
 

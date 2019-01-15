@@ -34,7 +34,6 @@ const NavBar = styled.div`
 
     &:hover {
       cursor: pointer;
-      transform: scale(1.04);
     }
   }
 
