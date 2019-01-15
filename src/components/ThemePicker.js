@@ -1,30 +1,23 @@
 import React, { Component } from "react";
-import styled, { keyframes } from "styled-components";
-
-const slideIn = keyframes`
-from{ opacity: 0; display: inherit;}
-to{ opacity: 1; display: inherit}
-`;
+import styled from "styled-components";
 
 const ThemeList = styled.ul`
   cursor: pointer;
+  height: 150px;
+  width: 80%;
+  height: 60%;
   display: flex;
   font-size: 1.3em;
   flex-direction: column;
   align-content: center;
-  justify-content: center;
   border-top: 1px solid lightgray;
   margin-top: -23px;
   margin-right: 20%;
-  overflow: scroll;
+  overflow-y: scroll;
+  border-bottom: 1px solid gray;
 
-  li {
-    animation: ${slideIn};
-    animation-duration: 0.5s;
-
-    :hover {
-      text-decoration: underline;
-    }
+  li :hover {
+    text-decoration: underline;
   }
 
   @media (min-width: 900px) {

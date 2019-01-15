@@ -6,7 +6,7 @@ export const PostWrapper = styled.div`
   text-align: left;
   font-size: 1.3em;
   line-height: 1.9em;
-  padding: 80px 20px 80px 10px;
+  padding: 80px 0;
 
   i {
     color: black;
@@ -20,8 +20,13 @@ export const PostWrapper = styled.div`
     font-size: 1.4em;
   }
 
+  p {
+    padding: 0 10px;
+  }
+
   h3 {
     text-decoration: underline;
+    padding: 0 10px;
   }
 
   li {
@@ -30,9 +35,9 @@ export const PostWrapper = styled.div`
   }
 
   .code-sample {
-    width: 90%;
-    border-radius: 10px;
-    box-shadow: 1px 1px 8px 1px rgba(39, 46, 53, 0.9);
+    width: 100vw;
+    margin: 0;
+    padding: 0;
   }
 
   .small-logo {
@@ -45,5 +50,9 @@ export const PostWrapper = styled.div`
     font-size: 1.2em;
     width: 70%;
     line-height: 2.2em;
+
+    .code-sample {
+      width: 110%;
+    }
   }
 `;
