@@ -5,7 +5,7 @@ const ThemeList = styled.ul`
   cursor: pointer;
   height: 150px;
   width: 80%;
-  height: 60%;
+  height: 100%;
   display: flex;
   font-size: 1.3em;
   flex-direction: column;
@@ -14,10 +14,13 @@ const ThemeList = styled.ul`
   margin-top: -23px;
   margin-right: 20%;
   overflow-y: scroll;
-  border-bottom: 1px solid gray;
+  line-height: 2.2em;
 
-  li :hover {
-    text-decoration: underline;
+  li {
+    margin-right: 30px;
+    :hover {
+      text-decoration: underline;
+    }
   }
 
   @media (min-width: 900px) {

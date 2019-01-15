@@ -22,7 +22,7 @@ const ExtraStuff = styled.div`
   z-index: 2;
   padding: 15px;
   background: #fff;
-  height: 60vh;
+  height: 500px;
   width: 50%;
   font-size: 0.8em;
   border: 1px solid rgba(191, 191, 191, 0.9);
