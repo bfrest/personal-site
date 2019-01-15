@@ -7,22 +7,22 @@ const show = keyframes`
   to{ pink; {transform: scale(1)}}
 `;
 
-const hide = keyframes`
-  from{{transform: scale(1)}}
-  to{background: pink; {transform: scale(.3)}}
+const fadeIn = keyframes`
+  from{opacity: 0}
+  to{opacity: 1}
 `;
 
 const ExtraStuff = styled.div`
   position: fixed;
   top: 0;
   right: 0vw;
-  margin: 20px 10px 0 0;
+  margin: 40px 10px 0 0;
   display: flex;
   flex-direction: column;
   z-index: 2;
   padding: 15px;
   background: #fff;
-  height: 90vh;
+  height: 60vh;
   width: 50%;
   font-size: 0.8em;
   border: 1px solid rgba(191, 191, 191, 0.9);
@@ -49,6 +49,7 @@ const ExtraStuff = styled.div`
   @media (min-width: 900px) {
     width: 20%;
     line-height: 2.6em;
+    margin-top: 50px;
 
     img {
       margin: 20px 20px 0 0;
@@ -61,7 +62,9 @@ const Stuff = styled.div`
   height: 100%;
   background: rgba(3, 3, 3, 0.75);
   z-index: 2;
-  position: absolute;
+  position: fixed;
+  animation: ${fadeIn};
+  animation-duration: 0.3s;
 `;
 
 class Extras extends Component {
