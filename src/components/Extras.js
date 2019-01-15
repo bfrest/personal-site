@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled, { keyframes } from "styled-components";
 import ThemePicker from "./ThemePicker";
+import OtherSettings from "./OtherSettings";
 
 const show = keyframes`
   from{ {transform: scale(.3)}}
@@ -14,27 +15,22 @@ const fadeIn = keyframes`
 
 const ExtraStuff = styled.div`
   position: fixed;
-  top: 0;
-  right: 0vw;
-  margin: 40px 10px 0 0;
+  align-self: center;
+  justify-self: center;
   display: flex;
   flex-direction: column;
   z-index: 2;
-  padding: 15px;
   background: #fff;
-  height: 500px;
-  width: 50%;
+  padding: 5px;
   font-size: 0.8em;
-  border: 1px solid rgba(191, 191, 191, 0.9);
   border-radius: 10px;
   box-shadow: 0px 0px 5px gray;
   transition: all 2s;
   animation: ${show};
   animation-duration: 0.3s;
-
-  h1 {
-    margin: -10px 0 30px 0;
-  }
+  height: 600px;
+  min-width: 200px;
+  overflow-y: scroll;
 
   svg {
     position: absolute;
@@ -47,13 +43,8 @@ const ExtraStuff = styled.div`
   }
 
   @media (min-width: 900px) {
-    width: 20%;
     line-height: 2.6em;
-    margin-top: 50px;
-
-    img {
-      margin: 20px 20px 0 0;
-    }
+    min-width: 400px;
   }
 `;
 
@@ -61,30 +52,49 @@ const Stuff = styled.div`
   width: 100vw;
   height: 100%;
   background: rgba(3, 3, 3, 0.75);
+  display: flex;
+  align-content: center;
+  justify-content: center;
   z-index: 2;
   position: fixed;
   animation: ${fadeIn};
   animation-duration: 0.3s;
 `;
 
+const ListOfSettings = styled.div`
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    align-content: space-around;
+    width: 100%;
+    li {
+      margin: 10px;
+      border-bottom: 2px solid #333;
+    }
+  }
+`;
+
 class Extras extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      amIShowing: null
+      showSetting: null,
+      subCategory: "ThemePicker"
     };
 
     this.modalRef = React.createRef();
-    this.addModal = this.addModal.bind(this);
-  }
-  componentDidMount() {
-    this.setState({ amIShowing: this.props.showSettings });
-    this.addModal();
+    this.handleSubCategory = this.handleSubCategory.bind(this);
   }
 
-  addModal() {
-    const modal = this.modalRef;
-    modal.current.style.animation = "";
+  componentDidMount() {
+    this.setState({ showSetting: this.props.showSettings });
+  }
+
+  handleSubCategory(componentName) {
+    this.setState({ subCategory: componentName });
+    console.log(componentName);
   }
 
   render() {
@@ -97,7 +107,18 @@ class Extras extends Component {
             <rect x="0.331665" y="43.9653" width="61" height="310" rx="16" transform="rotate(-45 0.331665 43.9653)" />
             <rect x="219.535" y="0.831757" width="61" height="310" rx="16" transform="rotate(45 219.535 0.831757)" />
           </svg>
-          <ThemePicker handleTheme={this.props.handleTheme} />
+
+          <ListOfSettings>
+            {/* You can have these change the state, maybe to whatSettingIsShowing or something. Then condtionally render the right compoment based on the string that is the state */}
+            <ul>
+              <li onClick={() => this.handleSubCategory("ThemePicker")}>Theme Changer</li>
+              <li>Coming Soon</li>
+              <li>Coming Soon</li>
+              <li>Coming Soon</li>
+            </ul>
+          </ListOfSettings>
+          {/* This will be where we can change the component */}
+          {this.state.subCategory === "ThemePicker" ? <ThemePicker handleTheme={this.props.handleTheme} /> : <OtherSettings />}
         </ExtraStuff>
       </Stuff>
     );

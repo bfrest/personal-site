@@ -5,6 +5,8 @@ const Hello = () => {
     <div>
       <h1>Others</h1>
       <p>Here is some stuff</p>
+      <li>list item</li>
+      <button type="radio" />
     </div>
   );
 };
