@@ -39,7 +39,7 @@ class Post extends Component {
           This is the log out component. I have added the onClick event handler to call the function that was passed through props to change state in the home component to false.
         </p>
         <div>
-          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547389470/logOut.png" alt="code sample" />
+          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547467588/logOut.png" alt="code sample" />
         </div>
 
         <h3>Inline If & If/Else Statement</h3>

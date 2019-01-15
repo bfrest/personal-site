@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const slideIn = keyframes`
+from{ opacity: 0; display: inherit;}
+to{ opacity: 1; display: inherit}
+`;
 
 const ThemeList = styled.ul`
   cursor: pointer;
@@ -13,8 +18,13 @@ const ThemeList = styled.ul`
   margin-right: 20%;
   overflow: scroll;
 
-  li:hover {
-    text-decoration: underline;
+  li {
+    animation: ${slideIn};
+    animation-duration: 0.5s;
+
+    :hover {
+      text-decoration: underline;
+    }
   }
 
   @media (min-width: 900px) {

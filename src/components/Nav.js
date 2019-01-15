@@ -10,7 +10,7 @@ const NavBar = styled.div`
   color: ${props => props.theme.fc};
   width: 100vw;
   height: 60px;
-  box-shadow: 0px 1px 0px gray;
+  box-shadow: 0px 1px 3px rgba(61, 61, 61, 0.6);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -71,11 +71,13 @@ class Nav extends Component {
           <Link to="/blog/conditional-rendering">
             <li>Blog</li>
           </Link>
+
           {/* This is for the little tooltip that shows up when you hover the lightbulb in the nav */}
           <img onClick={() => this.handleSettings()} onMouseOver={() => this.togglePlaygroundTip()} onMouseLeave={() => this.togglePlaygroundTip()} src={think} alt="settings" />
           {this.state.showPlaygroundTip === true && window.innerWidth > 700 && <PlaygroundTip />}
         </NavBar>
-        {this.state.showSettings === true && <Extras handleTheme={this.props.handleTheme} handleSetting={this.handleSettings} />}
+
+        {this.state.showSettings === true && <Extras handleTheme={this.props.handleTheme} handleSetting={this.handleSettings} showSettings={this.state.showSettings} />}
       </div>
     );
   }
