@@ -112,7 +112,7 @@ class Extras extends Component {
             {/* You can have these change the state, maybe to whatSettingIsShowing or something. Then condtionally render the right compoment based on the string that is the state */}
             <ul>
               <li onClick={() => this.handleSubCategory("ThemePicker")}>Theme Changer</li>
-              <li>Coming Soon</li>
+              <li onClick={() => this.handleSubCategory("asf")}>Coming Soon</li>
               <li>Coming Soon</li>
               <li>Coming Soon</li>
             </ul>

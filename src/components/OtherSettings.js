@@ -1,11 +1,10 @@
 import React from "react";
+import "./OtherSettings.css";
 
 const Hello = () => {
   return (
-    <div>
-      <h1>Others</h1>
-      <p>Here is some stuff</p>
-      <li>list item</li>
+    <div className="typewriter">
+      <h1>Hhhmmmmm........</h1>
       <button type="radio" />
     </div>
   );
