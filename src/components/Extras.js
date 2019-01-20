@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled, { keyframes } from "styled-components";
 import ThemePicker from "./ThemePicker";
-import OtherSettings from "./OtherSettings";
 
 const show = keyframes`
   from{ {transform: scale(.3)}}
@@ -29,8 +28,7 @@ const ExtraStuff = styled.div`
   animation: ${show};
   animation-duration: 0.3s;
   height: 600px;
-  min-width: 200px;
-  overflow-y: scroll;
+  min-width: 300px;
 
   svg {
     position: absolute;
@@ -48,7 +46,7 @@ const ExtraStuff = styled.div`
   }
 `;
 
-const Stuff = styled.div`
+const ExtrasWrapper = styled.div`
   width: 100vw;
   height: 100%;
   background: rgba(3, 3, 3, 0.75);
@@ -63,16 +61,16 @@ const Stuff = styled.div`
 
 const ListOfSettings = styled.div`
   ul {
-    margin: 0;
-    padding: 0;
     display: flex;
-    text-align: center;
-    align-content: space-around;
-    width: 100%;
+    justify-content: space-around;
+    align-content: center;
     li {
-      margin: 10px;
       border-bottom: 2px solid #333;
     }
+  }
+
+  @media (min-width: 900px) {
+    width: 30vw;
   }
 `;
 
@@ -85,21 +83,15 @@ class Extras extends Component {
     };
 
     this.modalRef = React.createRef();
-    this.handleSubCategory = this.handleSubCategory.bind(this);
   }
 
   componentDidMount() {
     this.setState({ showSetting: this.props.showSettings });
   }
 
-  handleSubCategory(componentName) {
-    this.setState({ subCategory: componentName });
-    console.log(componentName);
-  }
-
   render() {
     return (
-      <Stuff>
+      <ExtrasWrapper>
         <ExtraStuff ref={this.modalRef}>
           <h1>Settings</h1>
           {/* This is the x to close the modal */}
@@ -107,20 +99,9 @@ class Extras extends Component {
             <rect x="0.331665" y="43.9653" width="61" height="310" rx="16" transform="rotate(-45 0.331665 43.9653)" />
             <rect x="219.535" y="0.831757" width="61" height="310" rx="16" transform="rotate(45 219.535 0.831757)" />
           </svg>
-
-          <ListOfSettings>
-            {/* You can have these change the state, maybe to whatSettingIsShowing or something. Then condtionally render the right compoment based on the string that is the state */}
-            <ul>
-              <li onClick={() => this.handleSubCategory("ThemePicker")}>Theme Changer</li>
-              <li onClick={() => this.handleSubCategory("asf")}>Coming Soon</li>
-              <li>Coming Soon</li>
-              <li>Coming Soon</li>
-            </ul>
-          </ListOfSettings>
-          {/* This will be where we can change the component */}
-          {this.state.subCategory === "ThemePicker" ? <ThemePicker handleTheme={this.props.handleTheme} /> : <OtherSettings />}
+          <ThemePicker handleTheme={this.props.handleTheme} />
         </ExtraStuff>
-      </Stuff>
+      </ExtrasWrapper>
     );
   }
 }
