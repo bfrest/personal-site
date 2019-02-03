@@ -30,7 +30,7 @@ class Post extends Component {
         </p>
 
         <div>
-          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547388518/home.png" alt="code sample" />
+          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547388518/blog/home.png" alt="code sample" />
         </div>
 
         <p>
@@ -38,7 +38,7 @@ class Post extends Component {
         </p>
 
         <div>
-          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547389470/logIn.png" alt="code sample" />
+          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547389470/blog/logIn.png" alt="code sample" />
         </div>
 
         <p>
@@ -46,7 +46,7 @@ class Post extends Component {
         </p>
 
         <div>
-          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547467588/logOut.png" alt="code sample" />
+          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547467588/blog/logOut.png" alt="code sample" />
         </div>
 
         <h3>Inline If & If/Else Statement</h3>
@@ -57,7 +57,7 @@ class Post extends Component {
         </p>
 
         <div>
-          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547389470/inline.png" alt="code sample" />
+          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547389470/blog/inline.png" alt="code sample" />
         </div>
 
         <p>
@@ -68,7 +68,7 @@ class Post extends Component {
         <p>If the first evaluation passes it will render the first button, If not it will render the second button.</p>
 
         <div>
-          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547389471/inlineifElse.png" alt="code sample" />
+          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547389471/blog/inlineifElse.png" alt="code sample" />
         </div>
 
         <h3>Advanced</h3>
@@ -76,7 +76,7 @@ class Post extends Component {
         <p>If you want to see a use case I recently had while using styled components.</p>
 
         <div>
-          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547398735/props.png" alt="code sample" />
+          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547398735/blog/props.png" alt="code sample" />
         </div>
 
         <p>
@@ -88,7 +88,7 @@ class Post extends Component {
         </p>
 
         <div>
-          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547398735/propstheme.png" alt="code sample" />
+          <img className="code-sample" src="https://res.cloudinary.com/bfrest/image/upload/v1547398735/blog/propstheme.png" alt="code sample" />
         </div>
       </PostWrapper>
     );
