@@ -17,7 +17,7 @@ class About extends Component {
         <WhiteBackground>
           <div className="tech">
             <h1>Brendon Freston</h1>
-            <p className="desc">JavaScript Developer</p>
+            <p className="desc">Web Developer</p>
             <TechList />
           </div>
           <SocialLinks />
