@@ -4,7 +4,6 @@ import router from "./router";
 import "./App.css";
 import ResizeObserver from "react-resize-observer";
 import { ThemeProvider } from "styled-components";
-import RedesignToast from "./components/RedesignToast";
 
 const lightTheme = {
   bg: "white",
@@ -41,7 +40,6 @@ class App extends Component {
             }}
           />
           <Nav handleTheme={this.handleTheme} />
-          <RedesignToast />
           {router}
         </div>
       </ThemeProvider>
