@@ -33,11 +33,22 @@ const Created = styled.div`
   flex-direction: column;
   margin-top: 200px;
 
-  h2 {
+  h1,
+  h2,
+  h3 {
     font-weight: 900;
-    font-size: 1.9em;
     text-decoration-line: underline;
     text-decoration-color: #00d2d3;
+    text-align: center;
+  }
+
+  h1 {
+    width: 100%;
+    font-size: 1.9em;
+  }
+
+  h2 {
+    font-size: 1.2em;
   }
 
   img {
@@ -54,15 +65,35 @@ const ListOfStuff = styled.div`
   font-size: 1.3em;
 
   .project {
-    height: 
     width: 80vw;
     text-align: left;
     margin: 30px;
+
+    p {
+      line-height: 1.3em;
+    }
 
     img {
       width: 100%;
       box-shadow: 3px 3px 5px #555;
       margin: 25px 0;
+    }
+
+    h3 {
+      margin-bottom: -20px;
+    }
+
+    a {
+      padding: 3px;
+      font-weight: 800;
+      color: #00d2d3;
+      transition: all 0.25s;
+      :hover {
+        color: #fff;
+        background: linear-gradient(to right, darkRed, red);
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+      }
     }
   }
 `;
@@ -80,35 +111,35 @@ class About extends Component {
         </div>
 
         <Created>
-          <h2>What I've Created</h2>
-          <p>Here are some of the things I have built in the past.</p>
+          <h1>Previous Work</h1>
 
           <ListOfStuff>
             <div className="project">
+              <h2>Foxridge Development</h2>
+              <p>I developed a fully responsive site for an excavating company in Logan, Utah.</p>
+
+              <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933205/blog/Screen_Shot_2019-02-23_at_7.22.33_AM.png" alt="foxridge screenshot" />
+            </div>
+
+            <div className="project">
               <h2>Slack Clone</h2>
-              <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933164/blog/Screen_Shot_2019-02-23_at_7.45.05_AM.png" />
-              <p>
-                This slack clonse was a clonse of slacl This slack clonse was a clonse of slacl This slack clonse was a clonse of slacl This slack clonse was a clonse of slacl This
-                slack clonse was a clonse of slacl This slack clonse was a clonse of slacl This slack clonse was a clonse of slacl
-              </p>
+              <p />
+              <p>It's a responsive real time chat app with authentication. Built using react, Sass, nodejs, express and websockets.</p>
+              <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933164/blog/Screen_Shot_2019-02-23_at_7.45.05_AM.png" alt="app screenshot" />
+
+              <h3>Settings Menu</h3>
+              <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933170/blog/Screen_Shot_2019-02-23_at_7.21.36_AM.png" alt="menu screenshot" />
             </div>
 
             <div className="project">
               <h2>Deathwish Coffee Clone</h2>
+              <p>
+                Fully responsive clone of an e-commerce coffee shop called{" "}
+                <span>
+                  <a href="https://www.deathwishcoffee.com/">Deathwish Coffee</a>
+                </span>
+              </p>
               <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933167/blog/Screen_Shot_2019-02-23_at_7.07.29_AM.png" />
-              <p>
-                This slack clonse was a clonse of slacl This slack clonse was a clonse of slacl This slack clonse was a clonse of slacl This slack clonse was a clonse of slacl This
-                slack clonse was a clonse of slacl This slack clonse was a clonse of slacl This slack clonse was a clonse of slacl
-              </p>
-            </div>
-
-            <div className="project">
-              <h2>Foxridge Development</h2>
-              <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933205/blog/Screen_Shot_2019-02-23_at_7.22.33_AM.png" />
-              <p>
-                This slack clonse was a clonse of slacl This slack clonse was a clonse of slacl This slack clonse was a clonse of slacl This slack clonse was a clonse of slacl This
-                slack clonse was a clonse of slacl This slack clonse was a clonse of slacl This slack clonse was a clonse of sla
-              </p>
             </div>
           </ListOfStuff>
         </Created>
