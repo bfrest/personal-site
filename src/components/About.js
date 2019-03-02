@@ -1,30 +1,59 @@
 import React, { Component } from "react";
-import TechList from "./TechList";
-import SocialLinks from "./SocialLinks";
 import styled from "styled-components";
-import { WhiteBackground } from "../styleHelpers";
 
 const FullScreen = styled.div`
-  height: 100vh;
   display: inherit;
   flex-direction: column;
   align-items: center;
-  color: #7e57c2;
-  margin-top: 40px;
+  color: #fff;
+  background-image: url("https://res.cloudinary.com/bfrest/image/upload/v1551398362/blog/topographyNew.svg");
 
-  svg {
-    position: absolute;
-    top: 45%;
-    right: 0;
-    margin-right: -25px;
+  .pattern {
+    height: 100%;
+    background: rgba(132, 141, 255, 0.9);
+
+    svg {
+      position: absolute;
+      top: 45%;
+      right: 0;
+      margin-right: -25px;
+    }
+
+    .intro {
+      color: #fff;
+      font-size: 1.3em;
+      margin: 130px 30px 80px 30px;
+
+      p {
+        line-height: 1.3em;
+        text-align: left;
+        font-size: 1.6em;
+        font-weight: 800;
+      }
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: flex-end;
+
+      li {
+        margin: 30px;
+      }
+    }
   }
 
-  .intro {
-    background: #7e57c2;
-    color: #fff;
-    font-size: 1.3em;
-    height: 60vh;
-    padding: 20px;
+  @media (min-width: 900px) {
+    .intro {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        width: 75%;
+        align-self: center;
+      }
+    }
   }
 `;
 
@@ -38,17 +67,17 @@ const Created = styled.div`
   h3 {
     font-weight: 900;
     text-decoration-line: underline;
-    text-decoration-color: #00d2d3;
+    text-decoration-color: rgb(249, 186, 126);
     text-align: center;
   }
 
   h1 {
     width: 100%;
-    font-size: 1.9em;
+    font-size: 2.9em;
   }
 
   h2 {
-    font-size: 1.2em;
+    font-size: 1.6em;
   }
 
   img {
@@ -62,15 +91,16 @@ const ListOfStuff = styled.div`
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  font-size: 1.3em;
+  font-size: 1.5em;
 
   .project {
     width: 80vw;
-    text-align: left;
     margin: 30px;
 
     p {
       line-height: 1.3em;
+      font-weight: 800;
+      margin-top: -20px;
     }
 
     img {
@@ -79,15 +109,12 @@ const ListOfStuff = styled.div`
       margin: 25px 0;
     }
 
-    h3 {
-      margin-bottom: -20px;
-    }
-
     a {
       padding: 3px;
       font-weight: 800;
-      color: #00d2d3;
+      color: rgb(249, 186, 126);
       transition: all 0.25s;
+
       :hover {
         color: #fff;
         background: linear-gradient(to right, darkRed, red);
@@ -96,53 +123,64 @@ const ListOfStuff = styled.div`
       }
     }
   }
+
+  @media (min-width: 900px) {
+    .project {
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .project {
+      width: 80%;
+    }
+  }
 `;
 
 class About extends Component {
   render() {
     return (
       <FullScreen>
-        <div className="intro">
-          <h1>Hey There!</h1>
-          <p>
-            My Name is Brendon and I am a front end developer who values accesibility, creativity, and an innovative culture. I enjoy building useful, beautiful and fast digital
-            products.
-          </p>
+        <div className="pattern">
+          <div className="intro">
+            <h1>Hey There!</h1>
+            <p>
+              My Name is Brendon and I am a front end developer who values accesibility, creativity, and an innovative culture. I enjoy building useful, beautiful and fast digital
+              products.
+            </p>
+          </div>
+
+          <Created>
+            <h1>Previous Work</h1>
+
+            <ListOfStuff>
+              <div className="project">
+                <h2>Foxridge Development</h2>
+                <p>I developed a fully responsive site for an excavating company in Logan, Utah.</p>
+
+                <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933205/blog/Screen_Shot_2019-02-23_at_7.22.33_AM.png" alt="foxridge screenshot" />
+              </div>
+
+              <div className="project">
+                <h2>Slack Clone</h2>
+                <p />
+                <p>A clone of a responsive real time chat app with authentication using Auth0. Built using react, Sass, nodejs, express and websockets.</p>
+                <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933164/blog/Screen_Shot_2019-02-23_at_7.45.05_AM.png" alt="app screenshot" />
+              </div>
+
+              <div className="project">
+                <h2>Deathwish Coffee Clone</h2>
+                <p>
+                  Fully responsive clone of an e-commerce coffee shop called
+                  <span>
+                    <a href="https://www.deathwishcoffee.com/">Deathwish Coffee</a>
+                  </span>
+                </p>
+                <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933167/blog/Screen_Shot_2019-02-23_at_7.07.29_AM.png" alt="app screenshot" />
+              </div>
+            </ListOfStuff>
+          </Created>
         </div>
-
-        <Created>
-          <h1>Previous Work</h1>
-
-          <ListOfStuff>
-            <div className="project">
-              <h2>Foxridge Development</h2>
-              <p>I developed a fully responsive site for an excavating company in Logan, Utah.</p>
-
-              <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933205/blog/Screen_Shot_2019-02-23_at_7.22.33_AM.png" alt="foxridge screenshot" />
-            </div>
-
-            <div className="project">
-              <h2>Slack Clone</h2>
-              <p />
-              <p>It's a responsive real time chat app with authentication. Built using react, Sass, nodejs, express and websockets.</p>
-              <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933164/blog/Screen_Shot_2019-02-23_at_7.45.05_AM.png" alt="app screenshot" />
-
-              <h3>Settings Menu</h3>
-              <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933170/blog/Screen_Shot_2019-02-23_at_7.21.36_AM.png" alt="menu screenshot" />
-            </div>
-
-            <div className="project">
-              <h2>Deathwish Coffee Clone</h2>
-              <p>
-                Fully responsive clone of an e-commerce coffee shop called{" "}
-                <span>
-                  <a href="https://www.deathwishcoffee.com/">Deathwish Coffee</a>
-                </span>
-              </p>
-              <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933167/blog/Screen_Shot_2019-02-23_at_7.07.29_AM.png" />
-            </div>
-          </ListOfStuff>
-        </Created>
       </FullScreen>
     );
   }

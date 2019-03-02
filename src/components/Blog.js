@@ -8,10 +8,10 @@ import OpenSource from "./Posts/OpenSource";
 import ConditionalRendering from "./Posts/ConditionalRendering";
 
 const BlogWrap = styled.div`
-  height: 100vh;
-  color: black;
   display: flex;
+  color: #fff;
   flex-direction: row;
+  background: rgb(132, 141, 255);
 
   h2 {
     margin-top: 300px;
