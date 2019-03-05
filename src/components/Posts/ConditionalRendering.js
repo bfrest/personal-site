@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { PostWrapper } from "./postStyles";
-import gear from "../gear.svg";
+
 class Post extends Component {
   render() {
     return (
@@ -83,8 +83,7 @@ class Post extends Component {
           I was trying to get the text color to match a background theme and some of the choices are gradients. So I needed a way to get the text to have a gradient. I found out
           how from this <a href="https://codepen.io/leocampos/pen/pPwwNR">codepen</a>. But the problem I was having was the background for the blog post is white, and the
           background for one of the themes were white. So the p tag was white and so was the background. I made a little inline if/else statement that checks if the current theme
-          background is white then the p tag will be black, and if the background is not white then it will be the theme background color. You can see it in action if you hit
-          <img src={gear} alt="logo" className="small-logo" /> then change the theme and scroll up to the date at the top of the page!
+          background is white then the p tag will be black, and if the background is not white then it will be the theme background color.
         </p>
 
         <div>
