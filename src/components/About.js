@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import SocialLinks from "./SocialLinks";
 
 const FullScreen = styled.div`
   display: inherit;
@@ -108,18 +109,19 @@ const ListOfStuff = styled.div`
       box-shadow: 3px 3px 5px #555;
       margin: 25px 0;
     }
+    span {
+      a {
+        padding: 3px;
+        font-weight: 800;
+        color: rgb(249, 186, 126);
+        transition: all 0.25s;
 
-    a {
-      padding: 3px;
-      font-weight: 800;
-      color: rgb(249, 186, 126);
-      transition: all 0.25s;
-
-      :hover {
-        color: #fff;
-        background: linear-gradient(to right, darkRed, red);
-        cursor: pointer;
-        box-shadow: 2px 2px 2px black;
+        :hover {
+          color: #fff;
+          background: linear-gradient(to right, darkRed, red);
+          cursor: pointer;
+          box-shadow: 2px 2px 2px black;
+        }
       }
     }
   }
@@ -157,15 +159,18 @@ class About extends Component {
               <div className="project">
                 <h2>Foxridge Development</h2>
                 <p>I developed a fully responsive site for an excavating company in Logan, Utah.</p>
-
-                <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933205/blog/Screen_Shot_2019-02-23_at_7.22.33_AM.png" alt="foxridge screenshot" />
+                <a href="http://www.foxridgedev.co/">
+                  <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933205/blog/Screen_Shot_2019-02-23_at_7.22.33_AM.png" alt="foxridge screenshot" />
+                </a>
               </div>
 
               <div className="project">
                 <h2>Slack Clone</h2>
                 <p />
                 <p>A clone of a responsive real time chat app with authentication using Auth0. Built using react, Sass, nodejs, express and websockets.</p>
-                <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933164/blog/Screen_Shot_2019-02-23_at_7.45.05_AM.png" alt="app screenshot" />
+                <a href="https://github.com/bfrest/slack_clone">
+                  <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933164/blog/Screen_Shot_2019-02-23_at_7.45.05_AM.png" alt="app screenshot" />
+                </a>
               </div>
 
               <div className="project">
@@ -176,10 +181,13 @@ class About extends Component {
                     <a href="https://www.deathwishcoffee.com/">Deathwish Coffee</a>
                   </span>
                 </p>
-                <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933167/blog/Screen_Shot_2019-02-23_at_7.07.29_AM.png" alt="app screenshot" />
+                <a href="https://github.com/bfrest/deathwish-clone">
+                  <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933167/blog/Screen_Shot_2019-02-23_at_7.07.29_AM.png" alt="app screenshot" />
+                </a>
               </div>
             </ListOfStuff>
           </Created>
+          <SocialLinks />
         </div>
       </FullScreen>
     );
