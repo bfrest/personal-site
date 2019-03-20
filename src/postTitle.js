@@ -9,4 +9,9 @@ export const posts = [
     alt: "conditional-rendering",
     title: "Conditional Rendering"
   }
+  // {
+  //   id: 3,
+  //   alt: "sticky-nav",
+  //   title: "🍯 Sticky Nav 🍯"
+  // }
 ];

@@ -6,6 +6,7 @@ import { Route } from "react-router-dom";
 import Post from "./Posts/Template_Post";
 import OpenSource from "./Posts/OpenSource";
 import ConditionalRendering from "./Posts/ConditionalRendering";
+import StickyNav from "./Posts/StickyNav";
 
 const BlogWrap = styled.div`
   display: flex;
@@ -49,6 +50,7 @@ class Blog extends Component {
         <Route path="/blog/first-post" component={Post} />
         <Route path="/blog/open-source" component={OpenSource} />
         <Route path="/blog/conditional-rendering" component={ConditionalRendering} />
+        <Route path="/blog/sticky-nav" component={StickyNav} />
         <PostList showList={showList} toggleList={this.toggleList} />
         <ListButton showList={showList} toggleList={this.toggleList} />
       </BlogWrap>

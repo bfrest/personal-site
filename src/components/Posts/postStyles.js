@@ -8,18 +8,6 @@ export const PostWrapper = styled.div`
   line-height: 1.9em;
   padding: 80px 0;
 
-  i {
-    color: black;
-    z-index: 5;
-    background: ${props => (props.theme.bg === "white" ? props.theme.fc : props.theme.bg)};
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-radius: 5px;
-    padding: 6px;
-    font-weight: 800;
-    font-size: 1.4em;
-  }
-
   p {
     padding: 0 10px;
   }
