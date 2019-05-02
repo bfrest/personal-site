@@ -68,6 +68,7 @@ class TestPosts extends Component {
     const post = {
       title: this.state.title
     };
+
     // adding the post to the posts array
     postsRef.push(post);
 
@@ -99,6 +100,7 @@ class TestPosts extends Component {
           <textarea type="text" name="postBody" placeholder="Post" />
           <button>Send</button>
         </form>
+
         {this.state.posts.map(item => (
           // this is spitting out the data from firebase
           <div>{item.title}</div>

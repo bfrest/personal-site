@@ -21,7 +21,6 @@ class App extends Component {
             this.setState({ mainHeight: Math.round(rect.height), MainWidth: Math.round(rect.width) });
           }}
         />
-        <Nav />
         {router}
       </div>
     );
