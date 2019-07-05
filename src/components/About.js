@@ -157,26 +157,26 @@ class About extends Component {
 
             <ListOfStuff>
               <div className="project">
+                <h2>Wolfahl</h2>
+                <p />
+                <p>A portfolio for a videography company.</p>
+                <a href="https://hungry-golick-59b4f5.netlify.com/">
+                  <img src="https://res.cloudinary.com/bfrest/image/upload/v1562364464/blog/Screen_Shot_2019-07-05_at_4.03.47_PM.png" alt="app screenshot" />
+                </a>
+              </div>
+
+              <div className="project">
                 <h2>Foxridge Development</h2>
-                <p>I developed a fully responsive site for an excavating company in Logan, Utah.</p>
+                <p>Excavating company in Logan, Utah.</p>
                 <a href="http://www.foxridgedev.co/">
                   <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933205/blog/Screen_Shot_2019-02-23_at_7.22.33_AM.png" alt="foxridge screenshot" />
                 </a>
               </div>
 
               <div className="project">
-                <h2>Slack Clone</h2>
-                <p />
-                <p>A clone of a responsive real time chat app with authentication using Auth0. Built using react, Sass, nodejs, express and websockets.</p>
-                <a href="https://github.com/bfrest/slack_clone">
-                  <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933164/blog/Screen_Shot_2019-02-23_at_7.45.05_AM.png" alt="app screenshot" />
-                </a>
-              </div>
-
-              <div className="project">
                 <h2>Deathwish Coffee Clone</h2>
                 <p>
-                  Fully responsive clone of an e-commerce coffee shop called
+                  clone of an e-commerce coffee shop called
                   <span>
                     <a href="https://www.deathwishcoffee.com/">Deathwish Coffee</a>
                   </span>
