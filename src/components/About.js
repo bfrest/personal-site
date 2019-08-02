@@ -23,7 +23,7 @@ const FullScreen = styled.div`
     .intro {
       color: #fff;
       font-size: 1.3em;
-      margin: 130px 30px 80px 30px;
+      margin: 40vh 30px 220px 30px;
 
       p {
         line-height: 1.3em;
@@ -145,11 +145,7 @@ class About extends Component {
       <FullScreen>
         <div className="pattern">
           <div className="intro">
-            <h1>Hey There!</h1>
-            <p>
-              My Name is Brendon and I am a front end developer who values accesibility, creativity, and an innovative culture. I enjoy building useful, beautiful and fast digital
-              products.
-            </p>
+            <p>My Name is Brendon, I'm a front end developer who enjoys building useful, beautiful and fast digital products.</p>
           </div>
 
           <Created>
@@ -157,11 +153,18 @@ class About extends Component {
 
             <ListOfStuff>
               <div className="project">
+                <h2>Maintenance Tool</h2>
+                <p>An Internal tool for Foxridge Development that keeps track of services along with all the part numbers and oil amounts.</p>
+                <a href="https://github.com/bfrest/Construction-pack">
+                  <img src="https://res.cloudinary.com/bfrest/image/upload/v1564713530/Screen_Shot_2019-08-01_at_8.34.58_PM.png" alt="app screenshot" />
+                </a>
+              </div>
+
+              <div className="project">
                 <h2>Wolfahl</h2>
-                <p />
                 <p>A portfolio for a videography company.</p>
                 <a href="https://hungry-golick-59b4f5.netlify.com/">
-                  <img src="https://res.cloudinary.com/bfrest/image/upload/v1562364464/blog/Screen_Shot_2019-07-05_at_4.03.47_PM.png" alt="app screenshot" />
+                  <img src="https://res.cloudinary.com/bfrest/image/upload/v1564713257/wolfahl/Screen_Shot_2019-08-01_at_8.32.56_PM.png" alt="app screenshot" />
                 </a>
               </div>
 
@@ -176,10 +179,11 @@ class About extends Component {
               <div className="project">
                 <h2>Deathwish Coffee Clone</h2>
                 <p>
-                  clone of an e-commerce coffee shop called
+                  Clone of an e-commerce coffee shop called
                   <span>
                     <a href="https://www.deathwishcoffee.com/">Deathwish Coffee</a>
                   </span>
+                  .
                 </p>
                 <a href="https://github.com/bfrest/deathwish-clone">
                   <img src="https://res.cloudinary.com/bfrest/image/upload/v1550933167/blog/Screen_Shot_2019-02-23_at_7.07.29_AM.png" alt="app screenshot" />
