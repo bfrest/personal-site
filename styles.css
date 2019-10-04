@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  background: #1D1E21;
+  font-size: 2.5em;
+}
+
+div {
+  height: 100vh;
+  width: 100vw;
+  color: #EBE6E6;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.intro {
+  text-shadow: -2px 2px 3px #4ACFFF;
+  text-align: center;
+  justify-content: center;
+}
+
+.intro h1 {
+  margin: -10% 0 10% 0;
+  z-index: 2;
+  font-size: 1.8em;
+  width: 75vw;
+  align-self: center;
+  letter-spacing: 3px;
+}
+
+.blob {
+  position: absolute;
+}
+
+.bigBlue {
+  top: 0;
+  left: 0;
+}
+
+.pinky {
+  right: 0; 
+  top: 3%;
+  margin-right: 10px;
+}
+
+.orange {
+  top: 55vh;
+  right: 15%;
+  width: 400px;
+  height: 400px;
+}
+
+.intro button  {
+  border: 3px solid #4ACFFF;
+  color: #4ACFFF;
+  background: none;
+  font-size: 1.8em;
+  font-weight: 600;
+  align-self: center;
+  justify-self: center;
+  z-index: 2;
+  padding: 25px;
+}
+
+.purp {
+  margin-top: 15%;
+}
+
+.firstText p {
+  width: 70vw;
+  margin: 20% 0 0 13%;
+  justify-self: center;
+  z-index: 2;
+}
+
+.blue {
+  right: 0;
+  margin-top: 15%;
+}
+
+.secondText p {
+  z-index: 2;
+  width: 70vw;
+  text-align: right;
+  align-self: center;
+  margin-top: 23%;
+}
+
+
+.projectScreenshot {
+  height: 400px;
+  z-index: 2;
+}
+
+.red {
+  height: 800px;
+  position: relative;
+  margin: -540px 0 0 -800px; 
+}
+
+.project1 h1 {
+  margin: 5% 0 0 25%;
+  z-index: 2;
+  /* margin: 200px 0 0 -500px; */
+}
+
+.project1 .projectScreenshot {
+  align-self: center;
+  margin: 0 0 0 -108px;
+}
+
+.yella {
+  height: 450px;
+  /* margin-top: 50px; */
+  position: relative;
+}
+
+.project2 h1 {
+  align-self: center;
+  /* margin-top: 145px; */
+  z-index: 2;
+}
+
+.turq {
+  height: 520px;
+  /* margin: 50px 0 0 50px; */
+  position: relative;
+}
+
+.project3 h1 {
+  align-self: center;
+  /* margin-top: 145px; */
+  z-index: 2;
+}
+
+.lastBlob {
+  /* margin: 15% 0 0 22%; */
+  position: relative;
+}
+
+.connect h1 {
+  align-self: center;
+  /* margin-top: 320px; */
+  z-index: 2;
+}
