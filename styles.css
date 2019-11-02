@@ -14,6 +14,10 @@ div {
   display: flex;
   flex-direction: column;
   padding: 50px 0;
+
+  @media (max-width: 800px) {
+    height: 100%;
+  }
 }
 
 .intro {
@@ -56,7 +60,7 @@ div {
 .intro button  {
   border: 3px solid #4ACFFF;
   color: #4ACFFF;
-  background: none;
+  background: #1D1E21;
   font-size: 1.8em;
   font-weight: 600;
   align-self: center;
@@ -89,60 +93,84 @@ div {
   margin-top: 23%;
 }
 
+.project {
+  /* border: 2px solid orange; */
+  padding: 25% 0;
+}
+
+.project p {
+  align-self: center;
+  text-align: center;
+  width: 56%;
+}
+
+.project h1 {
+  z-index: 2;
+  align-self: center;
+}
 
 .projectScreenshot {
-  height: 400px;
+  height: 600px;
+  width: 900px;
   z-index: 2;
+  margin-top: 100px;
 }
 
 .red {
-  height: 800px;
+  height: 900px;
   position: relative;
   margin: -540px 0 0 -800px; 
 }
 
-.project1 h1 {
-  margin: 5% 0 0 25%;
-  z-index: 2;
-  /* margin: 200px 0 0 -500px; */
+.projectScreenshot {
+  align-self: center;
+  margin-top: -10px;
 }
 
-.project1 .projectScreenshot {
-  align-self: center;
-  margin: 0 0 0 -108px;
+.p3 { 
+  margin-top: -370px;
 }
 
 .yella {
-  height: 450px;
-  /* margin-top: 50px; */
+  height: 850px;
   position: relative;
-}
-
-.project2 h1 {
-  align-self: center;
-  /* margin-top: 145px; */
-  z-index: 2;
 }
 
 .turq {
   height: 520px;
-  /* margin: 50px 0 0 50px; */
   position: relative;
 }
 
-.project3 h1 {
-  align-self: center;
-  /* margin-top: 145px; */
-  z-index: 2;
-}
-
 .lastBlob {
-  /* margin: 15% 0 0 22%; */
   position: relative;
 }
 
 .connect h1 {
   align-self: center;
-  /* margin-top: 320px; */
   z-index: 2;
+}
+
+.test {
+  width: 100px; 
+  height: 100px;
+  background: red;
+}
+
+i {
+  color: white;
+}
+
+
+.socials {
+  margin-top: 50px;
+  align-self: center;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socials a {
+  font-size: 80px;
+  text-decoration: none;
 }
