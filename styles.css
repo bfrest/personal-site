@@ -14,10 +14,6 @@ div {
   display: flex;
   flex-direction: column;
   padding: 50px 0;
-
-  @media (max-width: 800px) {
-    height: 100%;
-  }
 }
 
 .intro {
@@ -33,6 +29,11 @@ div {
   width: 75vw;
   align-self: center;
   letter-spacing: 3px;
+}
+
+.intro p {
+  text-shadow: none;
+  font-size: .5em;
 }
 
 .blob {
@@ -148,12 +149,6 @@ div {
 .connect h1 {
   align-self: center;
   z-index: 2;
-}
-
-.test {
-  width: 100px; 
-  height: 100px;
-  background: red;
 }
 
 i {
