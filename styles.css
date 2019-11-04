@@ -54,9 +54,10 @@ div {
 
 .orange {
   top: 55vh;
-  right: 15%;
+  right: 10%;
   width: 400px;
   height: 400px;
+  margin-left: 130px;
 }
 
 .intro button  {
@@ -67,7 +68,7 @@ div {
   font-weight: 600;
   align-self: center;
   justify-self: center;
-  z-index: 2;
+  z-index: 99;
   padding: 25px;
 }
 
