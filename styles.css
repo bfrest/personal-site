@@ -218,6 +218,10 @@ p {
   text-align: left;
 }
 
+.info {
+  height: 130vh;
+}
+
 .project {
   padding: 0;
   margin: 0;
@@ -231,8 +235,7 @@ p {
 }
 
 .project h1 {
-  z-index: 2;
-  align-self: center;
+  text-align: center;
 }
 
 .projectScreenshot {
@@ -242,18 +245,19 @@ p {
   margin-top: -20px;
 }
 
-.connect h1 {
-  align-self: center;
-  z-index: 2;
+.connect {
+  margin-top: -250px;
+  height: 30vh;
 }
 
+
 .socials {
-  margin-top: -50px;
   align-self: center;
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: -50px;
 }
 
 .socials a {
