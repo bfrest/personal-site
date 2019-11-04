@@ -14,6 +14,7 @@ div {
   display: flex;
   flex-direction: column;
   padding: 50px 0;
+
 }
 
 .intro {
@@ -97,6 +98,7 @@ div {
 .project {
   /* border: 2px solid orange; */
   padding: 25% 0;
+ 
 }
 
 .project p {
@@ -115,17 +117,13 @@ div {
   width: 900px;
   z-index: 2;
   margin-top: 100px;
+  align-self: center;
 }
 
 .red {
   height: 900px;
   position: relative;
   margin: -540px 0 0 -800px; 
-}
-
-.projectScreenshot {
-  align-self: center;
-  margin-top: -10px;
 }
 
 .p3 { 
@@ -168,4 +166,98 @@ i {
 .socials a {
   font-size: 80px;
   text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  body {
+    letter-spacing: 1.5px;
+    font-size: 1.3em;
+  }
+
+  div {
+    height: none;
+    width: 100%;
+  }
+
+  .intro {
+    z-index: 999;
+    text-shadow: -1px 1px 2px #4ACFFF;
+  }
+
+.intro h1 {
+  font-size: 1.2em;
+  width: 95vw;
+  letter-spacing: 2px;
+  margin: -50% 0 10% 0;
+}
+
+.blob {
+  display: none;
+}
+
+.intro button  {
+  font-size: 1.2em;
+  z-index: 999;
+  padding: 15px;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+.firstText p {
+  width: 90vw;
+  z-index: 2;
+  align-self: center;
+  margin: 0;
+}
+
+.secondText p {
+  width: 90vw;
+  margin: 0;
+  text-align: left;
+}
+
+.project {
+  padding: 0;
+  margin: 0;
+  height: 150vh;
+}
+
+.project p {
+  align-self: center;
+  text-align: left;
+  width: 95vw;
+}
+
+.project h1 {
+  z-index: 2;
+  align-self: center;
+}
+
+.projectScreenshot {
+  width: 100vw;
+  height: 70vw;
+  z-index: 2;
+  margin-top: -20px;
+}
+
+.connect h1 {
+  align-self: center;
+  z-index: 2;
+}
+
+.socials {
+  margin-top: -50px;
+  align-self: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socials a {
+  font-size: 40px;
+  text-decoration: none;
+}
 }
