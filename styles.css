@@ -47,7 +47,7 @@ div {
 }
 
 .pinky {
-  right: 0; 
+  right: 0;
   top: 3%;
   margin-right: 10px;
 }
@@ -60,7 +60,7 @@ div {
   margin-left: 130px;
 }
 
-.intro button  {
+.intro button {
   border: 3px solid #4ACFFF;
   color: #4ACFFF;
   background: #1D1E21;
@@ -99,7 +99,7 @@ div {
 .project {
   /* border: 2px solid orange; */
   padding: 25% 0;
- 
+
 }
 
 .project p {
@@ -124,10 +124,10 @@ div {
 .red {
   height: 900px;
   position: relative;
-  margin: -540px 0 0 -800px; 
+  margin: -540px 0 0 -800px;
 }
 
-.p3 { 
+.p3 {
   margin-top: -370px;
 }
 
@@ -185,84 +185,84 @@ i {
     text-shadow: -1px 1px 2px #4ACFFF;
   }
 
-.intro h1 {
-  font-size: 1.2em;
-  width: 95vw;
-  letter-spacing: 2px;
-  margin: -50% 0 10% 0;
-}
+  .intro h1 {
+    font-size: 1.2em;
+    width: 95vw;
+    letter-spacing: 2px;
+    margin: -50% 0 10% 0;
+  }
 
-.blob {
-  display: none;
-}
+  .blob {
+    display: none;
+  }
 
-.intro button  {
-  font-size: 1.2em;
-  z-index: 999;
-  padding: 15px;
-}
+  .intro button {
+    font-size: 1.2em;
+    z-index: 999;
+    padding: 15px;
+  }
 
-p {
-  font-size: 1.3em;
-}
+  p {
+    font-size: 1.3em;
+  }
 
-.firstText p {
-  width: 90vw;
-  z-index: 2;
-  align-self: center;
-  margin: 0;
-}
+  .firstText p {
+    width: 90vw;
+    z-index: 2;
+    align-self: center;
+    margin: 0;
+  }
 
-.secondText p {
-  width: 90vw;
-  margin: 0;
-  text-align: left;
-}
+  .secondText p {
+    width: 90vw;
+    margin: 0;
+    text-align: left;
+  }
 
-.info {
-  height: 130vh;
-}
+  .info {
+    height: 130vh;
+  }
 
-.project {
-  padding: 0;
-  margin: 0;
-  height: 150vh;
-}
+  .project {
+    padding: 0;
+    margin: 0;
+    height: 150vh;
+  }
 
-.project p {
-  align-self: center;
-  text-align: left;
-  width: 95vw;
-}
+  .project p {
+    align-self: center;
+    text-align: left;
+    width: 95vw;
+  }
 
-.project h1 {
-  text-align: center;
-}
+  .project h1 {
+    text-align: center;
+  }
 
-.projectScreenshot {
-  width: 100vw;
-  height: 70vw;
-  z-index: 2;
-  margin-top: -20px;
-}
+  .projectScreenshot {
+    width: 100vw;
+    height: 70vw;
+    z-index: 2;
+    margin-top: -20px;
+  }
 
-.connect {
-  margin-top: -250px;
-  height: 30vh;
-}
+  .connect {
+    margin-top: -250px;
+    height: 30vh;
+  }
 
 
-.socials {
-  align-self: center;
-  width: 90vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: -50px;
-}
+  .socials {
+    align-self: center;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -50px;
+  }
 
-.socials a {
-  font-size: 40px;
-  text-decoration: none;
-}
+  .socials a {
+    font-size: 40px;
+    text-decoration: none;
+  }
 }
