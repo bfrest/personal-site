@@ -1,268 +1,53 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 2px;
-  background: #1D1E21;
-  font-size: 2.5em;
-}
-
-div {
-  height: 100vh;
-  width: 100vw;
-  color: #EBE6E6;
+  font-family: monospace;
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
-
-}
-
-.intro {
-  text-shadow: -2px 2px 3px #4ACFFF;
-  text-align: center;
+  align-items: center;
   justify-content: center;
+  height: 100vh;
+  font-size: 1.7em;
 }
 
-.intro h1 {
-  margin: -10% 0 10% 0;
-  z-index: 2;
+a {
+  text-decoration: none;
+  color: black;
   font-size: 1.8em;
-  width: 75vw;
-  align-self: center;
-  letter-spacing: 3px;
+  transition: all .2s ease-in-out;
 }
 
-.intro p {
-  text-shadow: none;
-  font-size: .5em;
-}
-
-.blob {
-  position: absolute;
-}
-
-.bigBlue {
-  top: 0;
-  left: 0;
-}
-
-.pinky {
-  right: 0;
-  top: 3%;
-  margin-right: 10px;
-}
-
-.orange {
-  top: 55vh;
-  right: 10%;
-  width: 400px;
-  height: 400px;
-  margin-left: 130px;
-}
-
-.intro button {
-  border: 3px solid #4ACFFF;
-  color: #4ACFFF;
-  background: #1D1E21;
-  font-size: 1.8em;
-  font-weight: 600;
-  align-self: center;
-  justify-self: center;
-  z-index: 99;
-  padding: 25px;
-}
-
-.purp {
-  margin-top: 15%;
-}
-
-.firstText p {
-  width: 70vw;
-  margin: 20% 0 0 13%;
-  justify-self: center;
-  z-index: 2;
-}
-
-.blue {
-  right: 0;
-  margin-top: 15%;
-}
-
-.secondText p {
-  z-index: 2;
-  width: 70vw;
-  text-align: right;
-  align-self: center;
-  margin-top: 23%;
-}
-
-.project {
-  /* border: 2px solid orange; */
-  padding: 25% 0;
-
-}
-
-.project p {
-  align-self: center;
-  text-align: center;
-  width: 56%;
-}
-
-.project h1 {
-  z-index: 2;
-  align-self: center;
-}
-
-.projectScreenshot {
-  height: 600px;
-  width: 900px;
-  z-index: 2;
-  margin-top: 100px;
-  align-self: center;
-}
-
-.red {
-  height: 900px;
-  position: relative;
-  margin: -540px 0 0 -800px;
-}
-
-.p3 {
-  margin-top: -370px;
-}
-
-.yella {
-  height: 850px;
-  position: relative;
-}
-
-.turq {
-  height: 520px;
-  position: relative;
-}
-
-.lastBlob {
-  position: relative;
-}
-
-.connect h1 {
-  align-self: center;
-  z-index: 2;
-}
-
-i {
+a:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 15px black;
   color: white;
 }
 
-
 .socials {
-  margin-top: 50px;
-  align-self: center;
-  width: 60%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
 }
 
-.socials a {
-  font-size: 80px;
-  text-decoration: none;
-}
-
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   body {
-    letter-spacing: 1.5px;
-    font-size: 1.3em;
-  }
-
-  div {
-    height: none;
-    width: 100%;
-  }
-
-  .intro {
-    z-index: 999;
-    text-shadow: -1px 1px 2px #4ACFFF;
-  }
-
-  .intro h1 {
-    font-size: 1.2em;
-    width: 95vw;
-    letter-spacing: 2px;
-    margin: -50% 0 10% 0;
-  }
-
-  .blob {
-    display: none;
-  }
-
-  .intro button {
-    font-size: 1.2em;
-    z-index: 999;
-    padding: 15px;
-  }
-
-  p {
-    font-size: 1.3em;
-  }
-
-  .firstText p {
-    width: 90vw;
-    z-index: 2;
-    align-self: center;
-    margin: 0;
-  }
-
-  .secondText p {
-    width: 90vw;
-    margin: 0;
-    text-align: left;
-  }
-
-  .info {
-    height: 130vh;
-  }
-
-  .project {
-    padding: 0;
-    margin: 0;
-    height: 150vh;
-  }
-
-  .project p {
-    align-self: center;
-    text-align: left;
-    width: 95vw;
-  }
-
-  .project h1 {
+    font-size: 1em;
     text-align: center;
   }
 
-  .projectScreenshot {
-    width: 100vw;
-    height: 70vw;
-    z-index: 2;
-    margin-top: -20px;
-  }
-
-  .connect {
-    margin-top: -250px;
-    height: 30vh;
-  }
-
-
   .socials {
-    align-self: center;
-    width: 90vw;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: -50px;
+    top:95vh;
+    left: 0;
+    width: 100vw;
   }
 
-  .socials a {
-    font-size: 40px;
-    text-decoration: none;
+  a:hover {
+    text-shadow: none;
+    color: black;
+    transform: none;
   }
 }
