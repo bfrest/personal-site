@@ -1,53 +1,78 @@
 body {
-  font-family: monospace;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-size: 1.7em;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.7em;
 }
 
 a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.8em;
-  transition: all .2s ease-in-out;
+	text-decoration: none;
+	color: black;
+	font-size: 1.8em;
+	transition: all 0.15s ease;
 }
 
 a:hover {
-  transform: scale(1.1);
-  text-shadow: 2px 2px 15px black;
-  color: white;
+	transform: scale(1.1);
+	text-shadow: 2px 2px 15px black;
+	color: white;
 }
 
 .socials {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: fixed;
-  height: 100%;
-  top: 0;
-  right: 0;
-  margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: fixed;
+	height: 100%;
+	top: 0;
+	right: 0;
+	margin-right: 20px;
 }
 
-@media (max-width: 900px) {
-  body {
-    font-size: 1em;
-    text-align: center;
-  }
 
-  .socials {
-    flex-direction: row;
-    top:95vh;
-    left: 0;
-    width: 100vw;
-  }
+@keyframes slideUpFadeIn {
+	from {
+		margin-top: 150px;
+		opacity: 0;
+	}
 
-  a:hover {
-    text-shadow: none;
-    color: black;
-    transform: none;
-  }
+	to {
+		margin-top: 0;
+		opacity: 1;
+	}
+}
+
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	width: 70%;
+	margin-left: 10%;
+	animation-name: slideUpFadeIn;
+	animation-duration: .9s;
+}
+
+.intro p {
+	margin-top: -10px;
+}
+
+.intro h3 {
+	text-decoration: underline;
+	text-decoration-color: #f0c77cea;
+}
+
+@media (max-width: 700px) {
+	body {
+		font-size: 1.2em;
+	}
+
+	.intro {
+		width: 80vw;
+	}
+
+	.socials {
+		top: 95vh;
+		left: 0;
+		flex-direction: row;
+	}
 }
