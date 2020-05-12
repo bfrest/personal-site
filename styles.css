@@ -29,6 +29,14 @@ a:hover {
 	top: 0;
 	right: 0;
 	margin-right: 20px;
+	background: white;
+	padding-top: 10px;
+}
+
+.socials a:hover {
+	transform: none;
+	text-shadow: 2px 2px 15px black;
+	color: none;
 }
 
 @keyframes slideUpFadeIn {
@@ -84,6 +92,11 @@ h3 {
 
 .projects img {
 	margin: 85px 0 10px 0;
+}
+
+.projects a {
+	margin: none;
+	font-size: 1em;
 }
 
 .intro button {
