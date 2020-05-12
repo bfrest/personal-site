@@ -31,7 +31,6 @@ a:hover {
 	margin-right: 20px;
 }
 
-
 @keyframes slideUpFadeIn {
 	from {
 		margin-top: 150px;
@@ -51,7 +50,6 @@ a:hover {
 	flex-direction: column;
 	align-items: center;
 	padding-bottom: 80px;
-
 }
 
 img {
@@ -68,20 +66,37 @@ img {
 	justify-content: center;
 	align-items: flex-start;
 	animation-name: slideUpFadeIn;
-	animation-duration: .9s;
+	animation-duration: 0.9s;
 }
 
 .intro p {
 	margin-top: -10px;
 }
 
-.intro h3 {
+h3 {
 	text-decoration: underline;
 	text-decoration-color: #f0c77cea;
 }
 
 .projects {
 	line-height: 2.5em;
+}
+
+.projects img {
+	margin: 85px 0 10px 0;
+}
+
+.intro button {
+	border: 2px solid #f0c77cea;
+	color: #f0c77cea;
+	padding: 5px;
+	background: none;
+	transition: all 0.1s linear;
+}
+
+.intro button:hover {
+	cursor: pointer;
+	box-shadow: 2px 2px 2px black;
 }
 
 @media (max-width: 700px) {
