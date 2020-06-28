@@ -1,2 +1,2 @@
 This is my personal portfolio!
-It's usually under construction because that's the way I am.
+It's usually under construction because I love trying new things.
