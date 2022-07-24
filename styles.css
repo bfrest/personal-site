@@ -73,10 +73,6 @@ img {
   animation-duration: 0.9s;
 }
 
-.intro p {
-  margin-top: -10px;
-}
-
 h3 {
   text-decoration: underline;
   text-decoration-color: #f0c77cea;
@@ -84,6 +80,7 @@ h3 {
 
 .projects {
   line-height: 2.5em;
+  margin-top: -10%
 }
 
 .projects img {
@@ -97,6 +94,10 @@ h3 {
 .projects a {
   margin: none;
   font-size: 1em;
+}
+
+.projects-header {
+  margin-bottom: -4%;
 }
 
 .intro button {
@@ -126,4 +127,6 @@ h3 {
     left: 0;
     flex-direction: row;
   }
+
+  .projects-header { margin-bottom: -20%;}
 }
