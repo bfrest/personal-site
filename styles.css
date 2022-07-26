@@ -122,6 +122,10 @@ h3 {
     width: 80vw;
   }
 
+  img {
+    min-width: 80vw;
+  }
+
   .socials {
     top: 93vh;
     left: 0;
